@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9bfe8f81-41ee-416c-b6c7-9e5380b821fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/blocks.build.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frikin-allies/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,53 +25,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
+        <entry file="file://$PROJECT_DIR$/src/metablocks/innerblock.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7724">
-              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-              <folding>
-                <element signature="e#115#137#0" expanded="true" />
-                <element signature="e#453#504#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="233">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="241" column="47" selection-start-line="241" selection-start-column="47" selection-end-line="241" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="1742">
+              <caret line="130" column="36" lean-forward="true" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
               <folding>
-                <element signature="e#306#372#0" expanded="true" />
+                <element signature="e#115#137#0" expanded="true" />
+                <element signature="e#453#504#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -91,7 +63,6 @@
       <find>ally-contact-information-representative-name</find>
       <find>ally-contact-information-representative-email</find>
       <find>ally-contact-information-representative-facebook</find>
-      <find>console</find>
       <find>frik-in/ally-importance</find>
       <find>colu</find>
       <find>registrationModule</find>
@@ -106,6 +77,7 @@
       <find>Size</find>
       <find>State</find>
       <find>State</find>
+      <find>console</find>
     </findStrings>
     <replaceStrings>
       <replace>ally-contact-information-facebook</replace>
@@ -132,15 +104,15 @@
         <option value="$PROJECT_DIR$/src/common.scss" />
         <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" />
         <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" />
-        <option value="$PROJECT_DIR$/src/metablocks/innerblock.js" />
         <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" />
         <option value="$PROJECT_DIR$/src/metablocks/allyimportance/editor.scss" />
         <option value="$PROJECT_DIR$/src/metablocks/allyimportance/AllyImportanceBlock.js" />
         <option value="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" />
         <option value="$PROJECT_DIR$/src/blocks.js" />
         <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss" />
-        <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/metablocks/innerblock.js" />
+        <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" />
       </list>
     </option>
   </component>
@@ -161,6 +133,24 @@
             <path>
               <item name="frikin-allies" type="b2602c69:ProjectViewProjectNode" />
               <item name="frikin-allies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frikin-allies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frikin-allies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frikin-allies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frikin-allies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="metablocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frikin-allies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frikin-allies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="metablocks" type="462c0819:PsiDirectoryNode" />
+              <item name="allycontactinformation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,12 +191,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562035205520</updated>
-      <workItem from="1562035208849" duration="11762000" />
+      <workItem from="1562035208849" duration="14192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11762000" />
+    <option name="totallyTimeSpent" value="14192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -308,27 +298,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/innerblock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="241" column="47" selection-start-line="241" selection-start-column="47" selection-end-line="241" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#306#372#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -339,21 +312,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7724">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#115#137#0" expanded="true" />
-            <element signature="e#453#504#0" expanded="true" />
+            <element signature="e#306#372#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/metablocks/innerblock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="233">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1742">
+          <caret line="130" column="36" lean-forward="true" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+          <folding>
+            <element signature="e#115#137#0" expanded="true" />
+            <element signature="e#453#504#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

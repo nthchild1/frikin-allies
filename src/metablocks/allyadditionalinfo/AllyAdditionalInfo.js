@@ -43,102 +43,6 @@ registerBlockType( 'frik-in/ally-additional-info', {
             source: 'meta',
             meta: 'event-additional-info-website'
         },
-
-        'event-additional-info-place-name': {
-            type: 'text',
-            source: 'meta',
-            meta: 'event-additional-info-place-name'
-        },
-
-        'event-additional-info-start-date': {
-            type: 'date',
-            source: 'meta',
-            meta: 'event-additional-info-start-date'
-        },
-
-        'event-additional-info-start-time': {
-            type: 'time',
-            source: 'meta',
-            meta: 'event-additional-info-start-time'
-        },
-
-        'event-additional-info-end-date': {
-            type: 'date',
-            source: 'meta',
-            meta: 'event-additional-info-end-date'
-        },
-
-        'event-additional-info-end-time': {
-            type: 'time',
-            source: 'meta',
-            meta: 'event-additional-info-end-time'
-        },
-
-        'event-additional-info-place-id': {
-            type: 'text',
-            source: 'meta',
-            meta: 'event-additional-info-place-id'
-        },
-
-        'event-additional-info-place-address': {
-            type: 'text',
-            source: 'meta',
-            meta: 'event-additional-info-place-address'
-        },
-
-        'place-latitude': {
-            type: 'number',
-            source: 'meta',
-            meta: 'place-latitude'
-        },
-
-        'place-longitude': {
-            type: 'number',
-            source: 'meta',
-            meta: 'place-longitude'
-        },
-
-        'total-tickets': {
-            type: 'number',
-            source: 'meta',
-            meta: 'total-tickets'
-        },
-
-        'pendiente-frikin-date': {
-            type: 'url',
-            source: 'meta',
-            meta: 'pendiente-frikin-date'
-        },
-
-        'buy-tickets-link': {
-            type: 'url',
-            source: 'meta',
-            meta: 'buy-tickets-link'
-        },
-
-        'allianceState': {
-            type: 'select',
-            source: 'meta',
-            meta: 'total-tickets'
-        },
-
-        'sold-out': {
-            type: 'checkbox',
-            source: 'meta',
-            meta: 'sold-out'
-        },
-
-        'minimum-price': {
-            type: 'number',
-            source: 'meta',
-            meta: 'minimum-price'
-        },
-
-        'maximum-price': {
-            type: 'number',
-            source: 'meta',
-            meta: 'maximum-price'
-        },
     },
     */
     keywords: [
@@ -159,9 +63,6 @@ registerBlockType( 'frik-in/ally-additional-info', {
     /**
      * TODO:
      *    FIX CHECKBOXES TO REPRESENT THE VALUE COMING FROM ATTRIBUTES
-     *    DELETE (SAVE AS NULL) OPTIONS THAT DISAPPEAR WHEN ANY OTHER OPTION IS TOGGLED
-     *    IMPLEMENT DATE THINGHIS
-     *    MAP PREVIOUS CONTENT SERIALIZED IN THE PREVIOUS HTML POST CONTENT TO NEW INNER BLOCK
      */
     edit: class extends React.Component {
         // Creates a <p class='wp-block-frik-in-social-networks'></p>.
@@ -188,6 +89,17 @@ registerBlockType( 'frik-in/ally-additional-info', {
 
                 //Tools
             };
+            wp.data.dispatch('core/editor').lockPostSaving('aria-disabled');
+        }
+
+        componentDidUpdate(){
+            if ( (this.state.allianceSize !== null) && (this.state.allianceState !== null) )
+            {
+                wp.data.dispatch('core/editor').unlockPostSaving('aria-disabled');
+            }
+            else{
+               // wp.data.dispatch('core/notices').createErrorNotice('Both alliance size and alliance state are needed')
+            }
         }
 
         render() {
@@ -200,12 +112,24 @@ registerBlockType( 'frik-in/ally-additional-info', {
             const dateType =  this.state.dateType;
             const pendienteAlly = this.state.pendienteAlly;
 
-            let pendientesModule = [
-                <label htmlFor="pendiente-frikin-checkbox">Pendiente Frik-in</label>,
+            const pendienteFrikinCheckbox = this.state.pendienteFrikin ? [<label htmlFor="pendiente-frikin-checkbox">Pendiente Frik-in</label>,
+                <input defaultChecked type="checkbox"  value={this.state.pendienteFrikin}
+                       id="pendiente-frikin-checkbox" name="pendiente-frikin-checkbox"
+                       onClick={() => this.setState({pendienteFrikin: !this.state.pendienteFrikin})}/>] : [<label htmlFor="pendiente-frikin-checkbox">Pendiente Frik-in</label>,
                 <input type="checkbox"  value={this.state.pendienteFrikin}
                        id="pendiente-frikin-checkbox" name="pendiente-frikin-checkbox"
-                       onClick={() => this.setState({pendienteFrikin: !this.state.pendienteFrikin})}/>,
+                       onClick={() => this.setState({pendienteFrikin: !this.state.pendienteFrikin})}/>];
 
+            const pendienteAllyCheckbox = this.state.pendienteAlly ? [<label htmlFor="pendiente-ally-checkbox">Pendiente Ally</label>,
+                <input defaultChecked type="checkbox"  value={this.state.pendienteAlly}
+                       id="pendiente-ally-checkbox" name="pendiente-ally-checkbox"
+                       onClick={() => this.setState({pendienteAlly: !this.state.pendienteAlly})}/>] : [<label htmlFor="pendiente-ally-checkbox">Pendiente Frik-in</label>,
+                <input type="checkbox"  value={this.state.pendienteAlly}
+                       id="pendiente-ally-checkbox" name="pendiente-ally-checkbox"
+                       onClick={() => this.setState({pendienteAlly: !this.state.pendienteAlly})}/>,];
+
+            let pendientesModule = [
+                pendienteFrikinCheckbox,
                 pendienteFrikin ? [
                     <label htmlFor="pendiente-frikin-date">Pendiente Date</label>,
                     <input value={this.state.pendienteFrikinDate} type="date"
@@ -216,11 +140,7 @@ registerBlockType( 'frik-in/ally-additional-info', {
                            }}
                     />] : null,
 
-
-                <label htmlFor="pendiente-ally-checkbox">Pendiente Ally</label>,
-                <input type="checkbox"  value={this.state.pendienteAlly}
-                       id="pendiente-ally-checkbox" name="pendiente-ally-checkbox"
-                       onClick={() => this.setState({pendienteAlly: !this.state.pendienteAlly})}/>,
+                pendienteAllyCheckbox,
 
                 pendienteAlly ? [
                     <label htmlFor="pendiente-ally-date">Pendiente Date</label>,
@@ -247,7 +167,7 @@ registerBlockType( 'frik-in/ally-additional-info', {
             let allianceSizeModule = [
                 <label htmlFor="alliance-size-select">Size</label>,
                 <select id="alliance-size-select" name="alliance-size"
-                        onChange={event => this.setState({allianceSizeS: event.target.value})}>
+                        onChange={event => this.setState({allianceSize: event.target.value})}>
                     <option value="" disabled selected>Select your option</option>
                     <option value="1">Tier 1</option>
                     <option value="2">Tier 2</option>
