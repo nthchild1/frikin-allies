@@ -36,40 +36,40 @@ registerBlockType( 'frik-in/ally-contact-info', {
 		align: ['full'],
 	}, */
 	attributes: {
-		'ally-contact-information-website': {
+		'website': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-website'
+			meta: 'website'
 		},
-		'ally-contact-information-representative-name': {
+		'representative-name': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-representative-name'
+			meta: 'representative-name'
 		},
-		'ally-contact-information-representative-phone': {
+		'representative-phone': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-representative-phone'
+			meta: 'representative-phone'
 		},
-		'ally-contact-information-email': {
+		'representative-email': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-email'
+			meta: 'representative-email'
 		},
-		'ally-contact-information-twitter': {
+		'representative-twitter': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-twitter'
+			meta: 'representative-twitter'
 		},
-		'ally-contact-information-facebook': {
+		'representative-facebook': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-facebook'
+			meta: 'representative-facebook'
 		},
-		'ally-contact-information-other': {
+		'other-info': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-other'
+			meta: 'other-info'
 		},
 
 		/*
@@ -104,13 +104,13 @@ registerBlockType( 'frik-in/ally-contact-info', {
 			this.setAttributes = props.setAttributes;
 			this.state = {
 				//Attributes
-				website: this.attributes['ally-contact-information-website'] ? this.attributes['ally-contact-information-website'] : null,
-				name: this.attributes['ally-contact-information-representative-name'] ? this.attributes['ally-contact-information-representative-name'] : null,
-				phone: this.attributes['ally-contact-information-representative-phone'] ? this.attributes['ally-contact-information-representative-phone'] : null,
-				email: this.attributes['ally-contact-information-email'] ? this.attributes['ally-contact-information-email'] : null,
-				twitter: this.attributes['ally-contact-information-twitter'] ? this.attributes['ally-contact-information-twitter'] : null,
-				facebook: this.attributes['ally-contact-information-facebook'] ? this.attributes['ally-contact-information-facebook'] : null,
-				other: this.attributes['ally-contact-information-other'] ? this.attributes['ally-contact-information-other'] : null
+				website: this.attributes['website'] ? this.attributes['website'] : null,
+				name: this.attributes['representative-name'] ? this.attributes['representative-name'] : null,
+				phone: this.attributes['representative-phone'] ? this.attributes['representative-phone'] : null,
+				email: this.attributes['representative-email'] ? this.attributes['representative-email'] : null,
+				twitter: this.attributes['representative-twitter'] ? this.attributes['representative-twitter'] : null,
+				facebook: this.attributes['representative-facebook'] ? this.attributes['representative-facebook'] : null,
+				other: this.attributes['other-info'] ? this.attributes['other-info'] : null
 			};
 		}
 
@@ -123,7 +123,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="webiste"
 					   onChange={ event => {
 						   this.setState( { website: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-website': event.target.value } );
+						   this.setAttributes( { 'website': event.target.value } );
 					   }}
 				/>
 
@@ -132,7 +132,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="name"
 					   onChange={ event => {
 						   this.setState( { name: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-representative-name': event.target.value } );
+						   this.setAttributes( { 'representative-name': event.target.value } );
 					   } }
 				/>
 
@@ -141,7 +141,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="phone"
 					   onChange={ event => {
 						   this.setState( { phone: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-representative-phone': event.target.value } );
+						   this.setAttributes( { 'representative-phone': event.target.value } );
 					   } }
 				/>
 
@@ -150,7 +150,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="email"
 					   onChange={ event => {
 						   this.setState( { email: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-email': event.target.value } );
+						   this.setAttributes( { 'representative-email': event.target.value } );
 					   } }
 				/>
 
@@ -159,7 +159,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="facebook"
 					   onChange={ event => {
 						   this.setState( { facebook: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-facebook': event.target.value } );
+						   this.setAttributes( { 'representative-facebook': event.target.value } );
 					   } }
 				/>
 
@@ -168,7 +168,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="twitter"
 					   onChange={ event => {
 						   this.setState( { twitter: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-twitter': event.target.value } );
+						   this.setAttributes( { 'representative-twitter': event.target.value } );
 					   } }
 				/>
 
@@ -177,7 +177,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="other"
 					   onChange={ event => {
 						   this.setState( { other: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-other': event.target.value } );
+						   this.setAttributes( { 'other-info': event.target.value } );
 					   } }
 				/>
 			</div>

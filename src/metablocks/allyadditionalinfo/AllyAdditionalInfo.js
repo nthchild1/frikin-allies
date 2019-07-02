@@ -36,7 +36,7 @@ registerBlockType( 'frik-in/ally-additional-info', {
     /*
         supports: {
         align: ['full'],
-    },
+    },*/
     attributes: {
         'event-additional-info-website': {
             type: 'url',
@@ -44,7 +44,6 @@ registerBlockType( 'frik-in/ally-additional-info', {
             meta: 'event-additional-info-website'
         },
     },
-    */
     keywords: [
         __( 'Events' ),
         __( 'Eventos' ),
@@ -59,10 +58,6 @@ registerBlockType( 'frik-in/ally-additional-info', {
      * The "edit" property must be a valid function.
      *
      * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
-     */
-    /**
-     * TODO:
-     *    FIX CHECKBOXES TO REPRESENT THE VALUE COMING FROM ATTRIBUTES
      */
     edit: class extends React.Component {
         // Creates a <p class='wp-block-frik-in-social-networks'></p>.
@@ -81,11 +76,11 @@ registerBlockType( 'frik-in/ally-additional-info', {
                 allianceSize: this.attributes['alliance-size'] ? this.attributes['alliance-size'] : null,
 
                 //Input Values
-                pendienteFrikin: false,
-                pendienteAlly: false,
+                pendienteFrikin: this.attributes['pendiente-frikin'] ? this.attributes['pendiente-frikin'] : false,
+                pendienteAlly: this.attributes['pendiente-ally'] ? this.attributes['pendiente-ally'] : false,
 
-                importanceFrikin: 0,
-                importanceAlly: 0,
+                importanceFrikin: this.attributes['importance-frikin'] ? this.attributes['importance-frikin'] : false,
+                importanceAlly: this.attributes['importance-ally'] ? this.attributes['importance-ally'] : false,
 
                 //Tools
             };

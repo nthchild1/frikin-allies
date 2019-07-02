@@ -88,23 +88,29 @@ class Frikin_Allies_Admin_Metablocks {
 	private function get_metablocks_fields() {
 		$fields = array();
 		//ally-contact-information
-		$fields[] = array( 'ally-contact-information-website', 'url' );
-		$fields[] = array( 'ally-contact-information-representative-name', 'text' );
-		$fields[] = array( 'ally-contact-information-representative-phone', 'phone' );
-		$fields[] = array( 'ally-contact-information-email', 'email' );
-		$fields[] = array( 'ally-contact-information-twitter', 'text' );
-		$fields[] = array( 'ally-contact-information-facebook', 'text' );
-		$fields[] = array( 'ally-contact-information-other', 'text' );
+		$fields[] = array( 'website', 'url' );
+		$fields[] = array( 'representative-name', 'text' );
+		$fields[] = array( 'representative-phone', 'phone' );
+		$fields[] = array( 'representative-email', 'email' );
+		$fields[] = array( 'representative-twitter', 'text' );
+		$fields[] = array( 'representative-facebook', 'text' );
+		$fields[] = array( 'other-info', 'text' );
 
 		//ally-social-networks
-		$fields[] = array( 'ally-social-networks-facebook', 'url' );
-		$fields[] = array( 'ally-social-networks-twitter', 'url' );
-		$fields[] = array( 'ally-social-networks-instagram', 'url' );
-		$fields[] = array( 'ally-social-networks-youtube', 'url' );
+		$fields[] = array( 'facebook', 'url' );
+		$fields[] = array( 'twitter', 'url' );
+		$fields[] = array( 'instagram', 'url' );
+		$fields[] = array( 'youtube', 'url' );
 
 		//ally-importance
 		$fields[] = array( 'ally-importance-us', 'number' );
 		$fields[] = array( 'ally-importance-them', 'number' );
+        $fields[] = array( 'pendiente-frikin-date', 'date' );
+        $fields[] = array( 'pendiente-ally-date', 'date' );
+        $fields[] = array( 'alliance-state', 'text' );
+        $fields[] = array( 'alliance-size', 'text' );
+        $fields[] = array( 'importance-ally', 'number' );
+        $fields[] = array( 'importance-frikin', 'number' );
 
 		return $fields;
 	} // get_metabox_fields()

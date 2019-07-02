@@ -36,25 +36,25 @@ registerBlockType( 'frik-in/ally-social-networks', {
 		align: ['full'],
 	}, */
 	attributes: {
-		'ally-social-networks-facebook': {
+		'facebook': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-social-networks-facebook'
+			meta: 'facebook'
 		},
-		'ally-social-networks-twitter': {
+		'twitter': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-social-networks-twitter'
+			meta: 'twitter'
 		},
-		'ally-social-networks-instagram': {
+		'instagram': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-social-networks-instagram'
+			meta: 'instagram'
 		},
-		'ally-social-networks-youtube': {
+		'youtube': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-social-networks-youtube'
+			meta: 'youtube'
 		},
 
 		/*
@@ -89,10 +89,10 @@ registerBlockType( 'frik-in/ally-social-networks', {
 			this.setAttributes = props.setAttributes;
 			this.state = {
 				//Attributes
-				facebook: this.attributes['ally-social-networks-facebook'] ? this.attributes['ally-social-networks-facebook'] : null,
-				twitter: this.attributes['ally-social-networks-twitter'] ? this.attributes['ally-social-networks-twitter'] : null,
-				instagram: this.attributes['ally-social-networks-instagram'] ? this.attributes['ally-social-networks-instagram'] : null,
-				youtube: this.attributes['ally-social-networks-youtube'] ? this.attributes['ally-social-networks-youtube'] : null,
+				facebook: this.attributes['facebook'] ? this.attributes['facebook'] : null,
+				twitter: this.attributes['twitter'] ? this.attributes['twitter'] : null,
+				instagram: this.attributes['instagram'] ? this.attributes['instagram'] : null,
+				youtube: this.attributes['youtube'] ? this.attributes['youtube'] : null,
 
 			};
 		}
@@ -106,7 +106,7 @@ registerBlockType( 'frik-in/ally-social-networks', {
 					   type="text" id="facebook"
 					   onChange={ event => {
 						   this.setState( { facebook: event.target.value } );
-						   this.setAttributes( { 'ally-social-networks-facebook': event.target.value } );
+						   this.setAttributes( { 'facebook': event.target.value } );
 					   }}
 				/>
 
@@ -115,7 +115,7 @@ registerBlockType( 'frik-in/ally-social-networks', {
 					   type="text" id="instagram"
 					   onChange={ event => {
 						   this.setState( { instagram: event.target.value } );
-						   this.setAttributes( { 'ally-social-networks-instagram': event.target.value } );
+						   this.setAttributes( { 'instagram': event.target.value } );
 					   } }
 				/>
 
@@ -124,7 +124,7 @@ registerBlockType( 'frik-in/ally-social-networks', {
 					   type="text" id="twitter"
 					   onChange={ event => {
 						   this.setState( { twitter: event.target.value } );
-						   this.setAttributes( { 'ally-social-networks-twitter': event.target.value } );
+						   this.setAttributes( { 'twitter': event.target.value } );
 					   } }
 				/>
 
@@ -133,7 +133,7 @@ registerBlockType( 'frik-in/ally-social-networks', {
 					   type="text" id="youtube"
 					   onChange={ event => {
 						   this.setState( { youtube: event.target.value } );
-						   this.setAttributes( { 'ally-social-networks-youtube': event.target.value } );
+						   this.setAttributes( { 'youtube': event.target.value } );
 					   } }
 				/>
 
