@@ -1,0 +1,42 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
+
+.wp-block-frik-in-place-additional-info {
+  	color: $friki__ink;
+	font-family: Rajdhani, sans-serif;
+	content: '';
+	display: table;
+	table-layout: fixed;
+
+	>div{
+		width: 50%;
+		float: left;
+		&:last-child{
+			width: 100%;
+		}
+	}
+
+	.icon{
+		display: block;
+		width: 20px;
+		height: 20px;
+	}
+
+	label{
+		display: block;
+		clear: left;
+	}
+
+	input{
+		margin-bottom: 15px;
+	}
+
+	#website{
+		width: 100%;
+	}
+}

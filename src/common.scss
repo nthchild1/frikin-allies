@@ -1,0 +1,86 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+// Colors.
+$black: rgb(41, 41, 41);
+$white: #f4f4f4;
+$gray: #dedede;
+$green: #bada55;
+$red: orangered;
+$starless: #000000;
+$elijah__snow: #ffffff;
+
+$friki__ink: #003333;
+$friki__purple: #990099;
+$friki__aqua: #00cc99;
+
+$otaku__red: #ff0000;
+$otaku__pink:  #ff99ff;
+
+$comics__orange: #ff6600;
+$comics__yellow: #ffcc00;
+
+$gamer__green: #00bb00;
+$gamer__greenlight: #ccff00;
+
+$scifi__blue: #0000ee;
+$scifi__bluelight: #33ffff;
+
+$toys__cepia: #993300;
+$toys__gray: #c0c092;
+
+$horror__black: #000000;
+$horror__pink: #990000;
+
+$tabletop__yellow: #FFE840;
+$tabletop__aqua: #00A0A0;
+
+$lamole__blue: #0072fd;
+
+$toons__pink: #f04098;
+$toons__orange: #f0a038;
+
+$kid__blue: #90f0e0;
+$kid__pink: #f8b0b0;
+
+.custom-button {
+  display: block;
+  clear: both;
+  margin: 0;
+  background-color: $elijah__snow;
+  border-color: $friki__ink;
+  border-radius: 3px;
+  color: $friki__ink;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 15px;
+  &:hover,
+  &.active,
+  &:focus {
+    background-color: $friki__ink;
+    color: $elijah__snow;
+    outline: none;
+  }
+
+  &.dark {
+    background-color: $friki__ink;
+    color: $elijah__snow;
+
+    &:hover,
+    &.active,
+    &:focus {
+      background-color: $elijah__snow;
+      color: $friki__ink;
+    }
+  }
+
+}
+
+li{
+  margin: 10px;
+}
