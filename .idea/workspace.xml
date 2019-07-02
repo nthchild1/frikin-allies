@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bfe8f81-41ee-416c-b6c7-9e5380b821fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/blocks.build.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/blocks.editor.build.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.editor.build.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/blocks.style.build.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.style.build.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metablocks/allyimportance/editor.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metablocks/allyimportance/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metablocks/innerblock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/innerblock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frikin-allies/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="36">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -213,12 +201,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562035205520</updated>
-      <workItem from="1562035208849" duration="11525000" />
+      <workItem from="1562035208849" duration="11762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11525000" />
+    <option name="totallyTimeSpent" value="11762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -364,8 +352,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
