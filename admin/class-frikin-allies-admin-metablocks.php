@@ -239,7 +239,8 @@ class Frikin_Allies_Admin_Metablocks {
 		$post_type_object->template = array(
 			array('frik-in/ally-social-networks'),
 			array('frik-in/ally-contact-info'),
-			array('frik-in/innerblock')
+            array('frik-in/ally-additional-info'),
+            array('frik-in/innerblock')
 		);
 		$post_type_object->template_lock = 'all';
 	}

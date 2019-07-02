@@ -51,20 +51,20 @@ registerBlockType( 'frik-in/ally-contact-info', {
 			source: 'meta',
 			meta: 'ally-contact-information-representative-phone'
 		},
-		'ally-contact-information-representative-email': {
+		'ally-contact-information-email': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-representative-email'
+			meta: 'ally-contact-information-email'
 		},
-		'ally-contact-information-representative-twitter': {
+		'ally-contact-information-twitter': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-representative-twitter'
+			meta: 'ally-contact-information-twitter'
 		},
-		'ally-contact-information-representative-facebook': {
+		'ally-contact-information-facebook': {
 			type: 'text',
 			source: 'meta',
-			meta: 'ally-contact-information-representative-facebook'
+			meta: 'ally-contact-information-facebook'
 		},
 		'ally-contact-information-other': {
 			type: 'text',
@@ -105,8 +105,8 @@ registerBlockType( 'frik-in/ally-contact-info', {
 			this.state = {
 				//Attributes
 				website: this.attributes['ally-contact-information-website'] ? this.attributes['ally-contact-information-website'] : null,
-				name: this.attributes['ally-contact-information-representative-name'] ? this.attributes['ally-contact-representative-name'] : null,
-				phone: this.attributes['ally-contact-information-representative-phone'] ? this.attributes['ally-contact-representative-phone'] : null,
+				name: this.attributes['ally-contact-information-representative-name'] ? this.attributes['ally-contact-information-representative-name'] : null,
+				phone: this.attributes['ally-contact-information-representative-phone'] ? this.attributes['ally-contact-information-representative-phone'] : null,
 				email: this.attributes['ally-contact-information-email'] ? this.attributes['ally-contact-information-email'] : null,
 				twitter: this.attributes['ally-contact-information-twitter'] ? this.attributes['ally-contact-information-twitter'] : null,
 				facebook: this.attributes['ally-contact-information-facebook'] ? this.attributes['ally-contact-information-facebook'] : null,
@@ -119,7 +119,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 			return <div className ={this.props.className}>
 
 				<label for="website">Representative Website </label>
-				<input value={this.state.facebook}
+				<input value={this.state.website}
 					   type="text" id="webiste"
 					   onChange={ event => {
 						   this.setState( { website: event.target.value } );
@@ -132,16 +132,16 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="name"
 					   onChange={ event => {
 						   this.setState( { name: event.target.value } );
-						   this.setAttributes( { 'ally-contact-information-website': event.target.value } );
+						   this.setAttributes( { 'ally-contact-information-representative-name': event.target.value } );
 					   } }
 				/>
 
-				<label htmlFor="twitter"> Representative Phone </label>
-				<input value={ this.state.twitter }
-					   type="text" id="twitter"
+				<label htmlFor="phone"> Representative Phone </label>
+				<input value={ this.state.phone }
+					   type="text" id="phone"
 					   onChange={ event => {
-						   this.setState( { twitter: event.target.value } );
-						   this.setAttributes( { 'ally-social-networks-twitter': event.target.value } );
+						   this.setState( { phone: event.target.value } );
+						   this.setAttributes( { 'ally-contact-information-representative-phone': event.target.value } );
 					   } }
 				/>
 
@@ -150,16 +150,34 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   type="text" id="email"
 					   onChange={ event => {
 						   this.setState( { email: event.target.value } );
+						   this.setAttributes( { 'ally-contact-information-email': event.target.value } );
+					   } }
+				/>
+
+				<label htmlFor="facebook">Representative Facebook </label>
+				<input value={ this.state.facebook }
+					   type="text" id="facebook"
+					   onChange={ event => {
+						   this.setState( { facebook: event.target.value } );
 						   this.setAttributes( { 'ally-contact-information-facebook': event.target.value } );
 					   } }
 				/>
 
-				<label htmlFor="youtube"> other </label>
-				<input value={ this.state.youtube }
-					   type="text" id="youtube"
+				<label htmlFor="email">Representative Twitter </label>
+				<input value={ this.state.twitter }
+					   type="text" id="twitter"
 					   onChange={ event => {
-						   this.setState( { youtube: event.target.value } );
-						   this.setAttributes( { 'ally-social-networks-youtube': event.target.value } );
+						   this.setState( { twitter: event.target.value } );
+						   this.setAttributes( { 'ally-contact-information-twitter': event.target.value } );
+					   } }
+				/>
+
+				<label htmlFor="other"> other </label>
+				<input value={ this.state.other }
+					   type="text" id="other"
+					   onChange={ event => {
+						   this.setState( { other: event.target.value } );
+						   this.setAttributes( { 'ally-contact-information-other': event.target.value } );
 					   } }
 				/>
 			</div>

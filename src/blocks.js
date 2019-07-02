@@ -11,6 +11,6 @@
 
 import './metablocks/allycontactinformation/AllyContactInfoBlock';
 import './metablocks/allysocialnetworks/AllySocialNetworksBlock';
-import './metablocks/allyimportance/AllyImportanceBlock';
+import './metablocks/allyadditionalinfo/AllyAdditionalInfo';
 
 import './metablocks/innerblock'

@@ -5,6 +5,7 @@
  * that are used across the project.
 */
 @import url(https://fonts.googleapis.com/css?family=Rajdhani);
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
 .custom-button {
   display: block;
   clear: both;
@@ -37,27 +38,27 @@ li {
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-.wp-block-frik-in-place-additional-info {
+.wp-block-frik-in-ally-contact-info {
   color: #003333;
   font-family: Rajdhani, sans-serif;
   content: '';
   display: table;
   table-layout: fixed; }
-  .wp-block-frik-in-place-additional-info > div {
+  .wp-block-frik-in-ally-contact-info > div {
     width: 50%;
     float: left; }
-    .wp-block-frik-in-place-additional-info > div:last-child {
+    .wp-block-frik-in-ally-contact-info > div:last-child {
       width: 100%; }
-  .wp-block-frik-in-place-additional-info .icon {
+  .wp-block-frik-in-ally-contact-info .icon {
     display: block;
     width: 20px;
     height: 20px; }
-  .wp-block-frik-in-place-additional-info label {
+  .wp-block-frik-in-ally-contact-info label {
     display: block;
     clear: left; }
-  .wp-block-frik-in-place-additional-info input {
+  .wp-block-frik-in-ally-contact-info input {
     margin-bottom: 15px; }
-  .wp-block-frik-in-place-additional-info #website {
+  .wp-block-frik-in-ally-contact-info #website {
     width: 100%; }
 /**
  * #.# Common SCSS
@@ -98,25 +99,87 @@ li {
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-.wp-block-frik-in-place-additional-info {
+.wp-block-frik-in-ally-social-networks {
   color: #003333;
   font-family: Rajdhani, sans-serif;
   content: '';
   display: table;
   table-layout: fixed; }
-  .wp-block-frik-in-place-additional-info > div {
+  .wp-block-frik-in-ally-social-networks > div {
     width: 50%;
     float: left; }
-    .wp-block-frik-in-place-additional-info > div:last-child {
+    .wp-block-frik-in-ally-social-networks > div:last-child {
       width: 100%; }
-  .wp-block-frik-in-place-additional-info .icon {
+  .wp-block-frik-in-ally-social-networks .icon {
     display: block;
     width: 20px;
     height: 20px; }
-  .wp-block-frik-in-place-additional-info label {
+  .wp-block-frik-in-ally-social-networks label {
     display: block;
     clear: left; }
-  .wp-block-frik-in-place-additional-info input {
+  .wp-block-frik-in-ally-social-networks input {
     margin-bottom: 15px; }
-  .wp-block-frik-in-place-additional-info #website {
+  .wp-block-frik-in-ally-social-networks #website {
+    width: 100%; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
+.custom-button {
+  display: block;
+  clear: both;
+  margin: 0;
+  background-color: #ffffff;
+  border-color: #003333;
+  border-radius: 3px;
+  color: #003333;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 15px; }
+  .custom-button:hover, .custom-button.active, .custom-button:focus {
+    background-color: #003333;
+    color: #ffffff;
+    outline: none; }
+  .custom-button.dark {
+    background-color: #003333;
+    color: #ffffff; }
+    .custom-button.dark:hover, .custom-button.dark.active, .custom-button.dark:focus {
+      background-color: #ffffff;
+      color: #003333; }
+
+li {
+  margin: 10px; }
+
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.wp-block-frik-in-ally-additional-info {
+  color: #003333;
+  font-family: Rajdhani, sans-serif;
+  content: '';
+  display: table;
+  table-layout: fixed; }
+  .wp-block-frik-in-ally-additional-info > div {
+    width: 50%;
+    float: left; }
+    .wp-block-frik-in-ally-additional-info > div:last-child {
+      width: 100%; }
+  .wp-block-frik-in-ally-additional-info .icon {
+    display: block;
+    width: 20px;
+    height: 20px; }
+  .wp-block-frik-in-ally-additional-info label {
+    display: block;
+    clear: left; }
+  .wp-block-frik-in-ally-additional-info input {
+    margin-bottom: 15px; }
+  .wp-block-frik-in-ally-additional-info #website {
     width: 100%; }

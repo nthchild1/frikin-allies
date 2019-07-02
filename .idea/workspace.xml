@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bfe8f81-41ee-416c-b6c7-9e5380b821fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/blocks.build.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/blocks.editor.build.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.editor.build.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/blocks.style.build.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.style.build.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allyimportance/editor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allyimportance/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/innerblock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/innerblock.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/frikin-allies/node_modules/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7724">
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+              <folding>
+                <element signature="e#115#137#0" expanded="true" />
+                <element signature="e#453#504#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="241" column="47" selection-start-line="241" selection-start-column="47" selection-end-line="241" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#306#372#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>i</find>
+      <find>inner</find>
+      <find>ally-contact-information-other</find>
+      <find>ally-contact-information-representative-name</find>
+      <find>ally-contact-information-representative-email</find>
+      <find>ally-contact-information-representative-facebook</find>
+      <find>console</find>
+      <find>frik-in/ally-importance</find>
+      <find>colu</find>
+      <find>registrationModule</find>
+      <find>requiresRegistration</find>
+      <find>registrationLink</find>
+      <find>registration-link</find>
+      <find>pendienteallyDate</find>
+      <find>Disponi</find>
+      <find>disponibility</find>
+      <find>Free E</find>
+      <find>allianceState</find>
+      <find>Size</find>
+      <find>State</find>
+      <find>State</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ally-contact-information-facebook</replace>
+      <replace>Pen</replace>
+      <replace>pendientesModule</replace>
+      <replace>pendienteFrikin</replace>
+      <replace>pendienteFrikinDate</replace>
+      <replace>pendiente-frikin-date</replace>
+      <replace>pendienteAllyDate</replace>
+      <replace>state</replace>
+      <replace>allianceState</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\xampp\apps\wordpress\htdocs\wp-content\plugins\frikin-allies</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" />
+        <option value="$PROJECT_DIR$/src/common.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/innerblock.js" />
+        <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" />
+        <option value="$PROJECT_DIR$/src/metablocks/allyimportance/editor.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/allyimportance/AllyImportanceBlock.js" />
+        <option value="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" />
+        <option value="$PROJECT_DIR$/src/blocks.js" />
+        <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="frikin-allies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frikin-allies" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frikin-events" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bfe8f81-41ee-416c-b6c7-9e5380b821fa" name="Default Changelist" comment="" />
+      <created>1562035205520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562035205520</updated>
+      <workItem from="1562035208849" duration="11525000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11525000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.20471597" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.11789925" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="e#115#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-988">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-taxonomies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1996">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/style.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/innerblock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="241" column="47" selection-start-line="241" selection-start-column="47" selection-end-line="241" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#306#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7724">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="e#115#137#0" expanded="true" />
+            <element signature="e#453#504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

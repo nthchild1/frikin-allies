@@ -136,6 +136,7 @@ registerBlockType( 'frik-in/ally-social-networks', {
 						   this.setAttributes( { 'ally-social-networks-youtube': event.target.value } );
 					   } }
 				/>
+
 			</div>
 		}
 	},

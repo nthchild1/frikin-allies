@@ -4,6 +4,7 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
 .custom-button {
   display: block;
   clear: both;
@@ -47,6 +48,51 @@ li {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
+.custom-button {
+  display: block;
+  clear: both;
+  margin: 0;
+  background-color: #ffffff;
+  border-color: #003333;
+  border-radius: 3px;
+  color: #003333;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 15px; }
+  .custom-button:hover, .custom-button.active, .custom-button:focus {
+    background-color: #003333;
+    color: #ffffff;
+    outline: none; }
+  .custom-button.dark {
+    background-color: #003333;
+    color: #ffffff; }
+    .custom-button.dark:hover, .custom-button.dark.active, .custom-button.dark:focus {
+      background-color: #ffffff;
+      color: #003333; }
+
+li {
+  margin: 10px; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-cgb-block-frikin-blocks {
+  border: 0.2rem solid #292929;
+  color: #292929;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
 .custom-button {
   display: block;
   clear: both;

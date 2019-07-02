@@ -10,6 +10,8 @@ const ALLOWED_BLOCKS = ['core/paragraph','core/image','core/heading','core/galle
 	'core-embed/issuu','core-embed/kickstarter','core-embed/meetup-com','core-embed/mixcloud','core-embed/photobucket','core-embed/polldaddy',
 	'core-embed/reddit','core-embed/reverbnation','core-embed/screencast','core-embed/scribd','core-embed/slideshare','core-embed/smugmug',
 	'core-embed/speaker','core-embed/ted','core-embed/tumblr','core-embed/videopress','core-embed/wordpress-tv',];
+const { useDispatch, useSelect } = wp.data;
+const { useCallback } = wp.element;
 
 /**
  * Register: a Gutenberg Block.
@@ -24,13 +26,19 @@ const ALLOWED_BLOCKS = ['core/paragraph','core/image','core/heading','core/galle
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
+
 registerBlockType( 'frik-in/innerblock', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'Inner - Block' ), // Block title.
 	icon: 'dashicons-products', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
-
 	attributes: {
+		content: {
+			type: 'string',
+			source: 'html',
+			multiline: 'p',
+			selector: 'blockquote',
+		},
 		align: {
 			default: 'full',
 			type: 'string',
@@ -48,13 +56,25 @@ registerBlockType( 'frik-in/innerblock', {
 	 *
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
 	 */
-	edit: (props) =>{
-		return(
-			<InnerBlocks
-				templateLock={false}
-				allowedBlocks={ALLOWED_BLOCKS}
-			/>
-		);
+	edit: (props) => {
+		let post_content = wp.data.select( "core/editor" ).getCurrentPost().content;
+		let blocks = wp.blocks.parse( post_content );
+		let oldblocks = [['core/paragraph', {content: ''}]];
+
+		if (blocks.length !== 0){
+			if (blocks.find(block => block.name === 'frik-in/innerblock'))
+			{
+				wp.data.dispatch('core/block-editor').setTemplateValidity(true);
+			}
+			else {
+				oldblocks =  blocks.map(block => [block.name ? block.name : 'core/paragraph', {content: block.attributes.content ? block.attributes.content : ''}]);
+			}
+		}
+		return <InnerBlocks
+			template={oldblocks}
+			templateLock={false}
+			allowedBlocks={ALLOWED_BLOCKS}
+		/>;
 	},
 
 	/**
