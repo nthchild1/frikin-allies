@@ -38,10 +38,35 @@ registerBlockType( 'frik-in/ally-additional-info', {
         align: ['full'],
     },*/
     attributes: {
-        'event-additional-info-website': {
+        'pending-date': {
             type: 'url',
             source: 'meta',
-            meta: 'event-additional-info-website'
+            meta: 'pending-date'
+        },
+        'alliance-state': {
+            type: 'url',
+            source: 'meta',
+            meta: 'alliance-state'
+        },
+        'alliance-size': {
+            type: 'url',
+            source: 'meta',
+            meta: 'alliance-size'
+        },
+        'pending-part': {
+            type: 'text',
+            source: 'meta',
+            meta: 'pending-part'
+        },
+        'importance-frikin': {
+            type: 'url',
+            source: 'meta',
+            meta: 'importance-frikin'
+        },
+        'importance-ally': {
+            type: 'url',
+            source: 'meta',
+            meta: 'importance-ally'
         },
     },
     keywords: [
@@ -66,18 +91,15 @@ registerBlockType( 'frik-in/ally-additional-info', {
             this.props = props;
             this.attributes = props.attributes;
             this.setAttributes = props.setAttributes;
-
             this.state = {
                 //Attributes
-                pendienteFrikinDate: this.attributes['pendiente-frikin-date'] ? this.attributes['pendiente-frikin-date'] : null,
-                pendienteAllyDate: this.attributes['pendiente-ally-date'] ? this.attributes['pendiente-ally-date'] : null,
+                pendingDate: this.attributes['pending-date'] ? this.attributes['pending-date'] : null,
 
                 allianceState: this.attributes['alliance-state'] ? this.attributes['alliance-state'] : null,
                 allianceSize: this.attributes['alliance-size'] ? this.attributes['alliance-size'] : null,
 
                 //Input Values
-                pendienteFrikin: this.attributes['pendiente-frikin'] ? this.attributes['pendiente-frikin'] : false,
-                pendienteAlly: this.attributes['pendiente-ally'] ? this.attributes['pendiente-ally'] : false,
+                pendingPart: this.attributes['pending-part'] ? this.attributes['pending-part'] : false,
 
                 importanceFrikin: this.attributes['importance-frikin'] ? this.attributes['importance-frikin'] : false,
                 importanceAlly: this.attributes['importance-ally'] ? this.attributes['importance-ally'] : false,
@@ -87,63 +109,40 @@ registerBlockType( 'frik-in/ally-additional-info', {
             wp.data.dispatch('core/editor').lockPostSaving('aria-disabled');
         }
 
-        componentDidUpdate(){
+        componentDidUpdate(prevState){
             if ( (this.state.allianceSize !== null) && (this.state.allianceState !== null) )
             {
                 wp.data.dispatch('core/editor').unlockPostSaving('aria-disabled');
             }
-            else{
-               // wp.data.dispatch('core/notices').createErrorNotice('Both alliance size and alliance state are needed')
-            }
+            // wp.data.dispatch('core/notices').createErrorNotice('Both alliance size and alliance state are needed')
         }
 
         render() {
             let dateModule, placeModule;
-
-            const placeSelected = this.state.placeSelected;
             const allianceState = this.state.allianceState;
-            const pendienteFrikin = this.state.pendienteFrikin;
-            const searchBuffer = this.state.searchBuffer;
-            const dateType =  this.state.dateType;
-            const pendienteAlly = this.state.pendienteAlly;
+            const pendingPart = this.state.pendingPart;
 
-            const pendienteFrikinCheckbox = this.state.pendienteFrikin ? [<label htmlFor="pendiente-frikin-checkbox">Pendiente Frik-in</label>,
-                <input defaultChecked type="checkbox"  value={this.state.pendienteFrikin}
-                       id="pendiente-frikin-checkbox" name="pendiente-frikin-checkbox"
-                       onClick={() => this.setState({pendienteFrikin: !this.state.pendienteFrikin})}/>] : [<label htmlFor="pendiente-frikin-checkbox">Pendiente Frik-in</label>,
-                <input type="checkbox"  value={this.state.pendienteFrikin}
-                       id="pendiente-frikin-checkbox" name="pendiente-frikin-checkbox"
-                       onClick={() => this.setState({pendienteFrikin: !this.state.pendienteFrikin})}/>];
+            let pendingsModule = [
+                [
+                    <label htmlFor="pending-part">Pending Part</label>,
+                    <select id="pending-part" name="pending-part"
+                            value={this.state.pendingPart}
+                            onChange={event => {
+                                this.setState({pendingPart: event.target.value})
+                                this.setAttributes( { 'pending-part': event.target.value } );
+                            }}>
+                        <option value="" disabled>Select your option</option>
+                        <option value="frikin">Frik-in</option>
+                        <option value="ally">Ally</option>
+                    </select>],
 
-            const pendienteAllyCheckbox = this.state.pendienteAlly ? [<label htmlFor="pendiente-ally-checkbox">Pendiente Ally</label>,
-                <input defaultChecked type="checkbox"  value={this.state.pendienteAlly}
-                       id="pendiente-ally-checkbox" name="pendiente-ally-checkbox"
-                       onClick={() => this.setState({pendienteAlly: !this.state.pendienteAlly})}/>] : [<label htmlFor="pendiente-ally-checkbox">Pendiente Frik-in</label>,
-                <input type="checkbox"  value={this.state.pendienteAlly}
-                       id="pendiente-ally-checkbox" name="pendiente-ally-checkbox"
-                       onClick={() => this.setState({pendienteAlly: !this.state.pendienteAlly})}/>,];
-
-            let pendientesModule = [
-                pendienteFrikinCheckbox,
-                pendienteFrikin ? [
-                    <label htmlFor="pendiente-frikin-date">Pendiente Date</label>,
-                    <input value={this.state.pendienteFrikinDate} type="date"
-                           id="pendiente-frikin-date" name="pendiente-frikin-date"
+                pendingPart ? [
+                    <label htmlFor="pending-date">Pending Date</label>,
+                    <input value={this.state.pendingDate} type="date"
+                           id="pending-date" name="pending-date"
                            onChange={ event => {
-                               this.setState( { pendienteFrikinDate: event.target.value } );
-                               this.setAttributes( { 'pendiente-frikin-date': event.target.value } );
-                           }}
-                    />] : null,
-
-                pendienteAllyCheckbox,
-
-                pendienteAlly ? [
-                    <label htmlFor="pendiente-ally-date">Pendiente Date</label>,
-                    <input value={this.state.pendienteAllyDate} type="date"
-                           id="pendiente-frikin-date" name="pendiente-frikin-date"
-                           onChange={ event => {
-                               this.setState( { pendienteAllyDate: event.target.value } );
-                               this.setAttributes( { 'pendiente-ally-date': event.target.value } );
+                               this.setState( { pendingDate: event.target.value } );
+                               this.setAttributes( { 'pending-date': event.target.value } );
                            }}
                     />] : null,
             ];
@@ -152,8 +151,12 @@ registerBlockType( 'frik-in/ally-additional-info', {
             let allianceStateModule = [
                 <label htmlFor="alliance-state-select">State</label>,
                 <select id="alliance-state-select" name="alliance-state"
-                        onChange={event => this.setState({allianceState: event.target.value})}>
-                    <option value="" disabled selected>Select your option</option>
+                        value={this.state.allianceState}
+                        onChange={event => {
+                            this.setState({allianceState: event.target.value})
+                            this.setAttributes( { 'alliance-state': event.target.value } );
+                        }}>
+                    <option value="" disabled>Select your option</option>
                     <option value="active">Active</option>
                     <option value="inactive">Inactive</option>
                     <option value="uncertain">Uncertain</option>
@@ -162,7 +165,11 @@ registerBlockType( 'frik-in/ally-additional-info', {
             let allianceSizeModule = [
                 <label htmlFor="alliance-size-select">Size</label>,
                 <select id="alliance-size-select" name="alliance-size"
-                        onChange={event => this.setState({allianceSize: event.target.value})}>
+                        value={this.state.allianceSize}
+                        onChange={event => {
+                            this.setState({allianceSize: event.target.value})
+                            this.setAttributes( { 'alliance-size': event.target.value } );
+                        }}>
                     <option value="" disabled selected>Select your option</option>
                     <option value="1">Tier 1</option>
                     <option value="2">Tier 2</option>
@@ -191,10 +198,10 @@ registerBlockType( 'frik-in/ally-additional-info', {
 
             //EDITOR RETURN
             return <div className ={this.props.className}>
-                    {allianceStateModule}
-                    {pendientesModule}
-                    {allianceSizeModule}
-                    {importanceModule}
+                {pendingsModule}
+                {allianceStateModule}
+                {allianceSizeModule}
+                {importanceModule}
             </div>
         }},
 

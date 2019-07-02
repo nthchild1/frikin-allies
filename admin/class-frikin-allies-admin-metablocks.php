@@ -105,8 +105,8 @@ class Frikin_Allies_Admin_Metablocks {
 		//ally-importance
 		$fields[] = array( 'ally-importance-us', 'number' );
 		$fields[] = array( 'ally-importance-them', 'number' );
-        $fields[] = array( 'pendiente-frikin-date', 'date' );
-        $fields[] = array( 'pendiente-ally-date', 'date' );
+        $fields[] = array( 'pending-date', 'date' );
+        $fields[] = array( 'pending-part', 'text' );
         $fields[] = array( 'alliance-state', 'text' );
         $fields[] = array( 'alliance-size', 'text' );
         $fields[] = array( 'importance-ally', 'number' );
@@ -243,9 +243,9 @@ class Frikin_Allies_Admin_Metablocks {
 	public function register_template(){
 		$post_type_object = get_post_type_object( 'ally' );
 		$post_type_object->template = array(
-			array('frik-in/ally-social-networks'),
 			array('frik-in/ally-contact-info'),
             array('frik-in/ally-additional-info'),
+            array('frik-in/ally-social-networks'),
             array('frik-in/innerblock')
 		);
 		$post_type_object->template_lock = 'all';
