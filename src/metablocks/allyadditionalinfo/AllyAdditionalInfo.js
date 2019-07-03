@@ -138,7 +138,7 @@ registerBlockType("frik-in/ally-additional-info", {
             const pendingPart = this.state.pendingPart;
             let pendingsModule = [
                 [
-                    <label htmlFor="pending-part">{__("Pending Part","frikin-allies")}</label>,
+                    <label htmlFor="pending-part">{__("Parte con Pendiente","frikin-allies")}</label>,
                     <select value={this.state.pendingPart}
                         id="pending-part" name="pending-part"
                         onChange={event => {
@@ -146,15 +146,15 @@ registerBlockType("frik-in/ally-additional-info", {
                             this.setAttributes({ "pending-part": event.target.value });
                         }}
                     >
-                        <option value="none">{__("None","frikin-allies")}</option>
+                        <option value="none">{__("Ninguno","frikin-allies")}</option>
                         <option value="frikin">{__("Frik-in","frikin-allies")}</option>
-                        <option value="ally">{__("Ally","frikin-allies")}</option>
+                        <option value="ally">{__("Aliado","frikin-allies")}</option>
                     </select>
                 ],
 
                 pendingPart !== "none"
                     ? [
-                        <label htmlFor="pending-date">{__("Pending Date","frikin-allies")}</label>,
+                        <label htmlFor="pending-date">{__("Fecha de Pendiente","frikin-allies")}</label>,
                         <input value={this.state.pendingDate}
                             type="date" id="pending-date" name="pending-date"
                             onChange={event => {
@@ -167,7 +167,7 @@ registerBlockType("frik-in/ally-additional-info", {
             ];
 
             let allianceStateModule = [
-                <label htmlFor="alliance-state-select">{__("Alliance State","frikin-allies")}</label>,
+                <label htmlFor="alliance-state-select">{__("Estado de Alianza","frikin-allies")}</label>,
                 <select value={this.state.allianceState}
                         id="alliance-state-select" name="alliance-state"
                         onChange={event => {
@@ -179,15 +179,15 @@ registerBlockType("frik-in/ally-additional-info", {
                         this.setAttributes({ "alliance-state": event.target.value });
                     }}
                 >
-                    <option value="">{__("Select your option","frikin-allies")}</option>
-                    <option value="active">{__("Active","frikin-allies")}</option>
-                    <option value="inactive">{__("Inactive","frikin-allies")}</option>
-                    <option value="uncertain">{__("Uncertain","frikin-allies")}</option>
+                    <option value="">{__("Selecciona tu opción","frikin-allies")}</option>
+                    <option value="active">{__("Activa","frikin-allies")}</option>
+                    <option value="inactive">{__("Inactiva","frikin-allies")}</option>
+                    <option value="uncertain">{__("Incierta","frikin-allies")}</option>
                 </select>
             ];
 
             let allianceSizeModule = [
-                <label htmlFor="alliance-size-select">{__("Size","frikin-allies")}</label>,
+                <label htmlFor="alliance-size-select">{__("Tamaño","frikin-allies")}</label>,
                 <select
                     id="alliance-size-select"
                     name="alliance-size"
@@ -201,15 +201,15 @@ registerBlockType("frik-in/ally-additional-info", {
                         this.setAttributes({ "alliance-size": event.target.value });
                     }}
                 >
-                    <option value="" disabled selected> {__("Select your option","frikin-allies")}</option>
-                    <option value="1">{__("Tier 1","frikin-allies")}</option>
-                    <option value="2">{__("Tier 2","frikin-allies")}</option>
-                    <option value="3">{__("Tier 3","frikin-allies")}</option>
+                    <option value="" disabled selected> {__("Selecciona tu opción", "frikin-allies")}</option>
+                    <option value="1">{__("Nivel 1","frikin-allies")}</option>
+                    <option value="2">{__("Nivel 2","frikin-allies")}</option>
+                    <option value="3">{__("Nivel 3","frikin-allies")}</option>
                 </select>
             ];
 
             let importanceModule = [
-                <label htmlFor="importance-frikin">{__("Importance Frik-in", "frikin-allies")}</label>,
+                <label htmlFor="importance-frikin">{__("Importancia Frik-in", "frikin-allies")}</label>,
                 <input value={this.state.importanceFrikin}
                     type="number" id="importance-frikin" name="importance-frikin"
                     onChange={event => {
@@ -217,7 +217,7 @@ registerBlockType("frik-in/ally-additional-info", {
                         this.setAttributes({ "importance-frikin": event.target.value });
                     }}
                 />,
-                <label htmlFor="importance-ally">{__("Importance Ally", "frikin-allies")}</label>,
+                <label htmlFor="importance-ally">{__("Importancia Aliado", "frikin-allies")}</label>,
                 <input value={this.state.importanceAlly}
                     type="number" id="importance-ally" name="importance-ally"
                     onChange={event => {
