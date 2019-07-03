@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="9bfe8f81-41ee-416c-b6c7-9e5380b821fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/i18nblocks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-frikin-allies-i18n.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-frikin-allies-i18n.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-frikin-allies.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-frikin-allies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/frikin-allies-es_MX-a428ca8038639f644f00b23014dacb2b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/frikin-allies-es_MX-a4f783c851c57db1967c3d9a58cfd198.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/frikin-allies-es_MX-afd7686e2728e72aba633a28e31d3ebb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/frikin-allies-es_MX.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/frikin-allies-es_MX.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/frikin-allies-es_MX.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/frikin-allies.pot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frikin-allies/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +32,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/class-frikin-allies-i18n.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/class-frikin-allies.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="191" column="50" selection-start-line="191" selection-start-column="50" selection-end-line="191" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="131" column="40" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="40" />
+            <state relative-caret-position="368">
+              <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX-frikin-allies-build-js.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="467" selection-start-column="467" selection-end-column="467" />
             </state>
           </provider>
         </entry>
@@ -41,18 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ally-social-networks-youtube</find>
-      <find>ally-contact-information-email</find>
-      <find>pendiente</find>
-      <find>pending</find>
-      <find>Pendiente</find>
-      <find>console.</find>
-      <find>&lt;select</find>
-      <find>allianceState</find>
-      <find>pending-frikin</find>
-      <find>checkbox</find>
-      <find>pending-fr</find>
-      <find>checb</find>
       <find>date</find>
       <find>conso</find>
       <find>Carlos Cortés</find>
@@ -71,6 +97,18 @@
       <find>representative</find>
       <find>Representan</find>
       <find>wp_register_script</find>
+      <find>frikin_blocks-cgb-style-css</find>
+      <find>frikin_blocks-cgb-block-js</find>
+      <find>frikin_blocks-cgb-block-editor-css</find>
+      <find>Other</find>
+      <find>register_block</find>
+      <find>register_metablocks</find>
+      <find>This is a short description of what the plugin does. It's displayed in the WordPress admin area</find>
+      <find>wp_set_script_translations</find>
+      <find>wp_reg</find>
+      <find>register_block_type</find>
+      <find>GWG_ESNEXT_PLUGIN_DIR</find>
+      <find>messages</find>
     </findStrings>
     <replaceStrings>
       <replace>ally-contact-information-facebook</replace>
@@ -99,6 +137,10 @@
       <replace>[</replace>
       <replace>webmaster@frik-in.com</replace>
       <replace />
+      <replace>frikin-allies-build-css</replace>
+      <replace>frikin-allies-build-js</replace>
+      <replace>frikin-allies-build-editor-css</replace>
+      <replace>frikin-allies</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\xampp\apps\wordpress\htdocs\wp-content\plugins\frikin-allies</dir>
@@ -115,20 +157,21 @@
         <option value="$PROJECT_DIR$/src/metablocks/allyimportance/AllyImportanceBlock.js" />
         <option value="$PROJECT_DIR$/src/blocks.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" />
         <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" />
         <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss" />
         <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" />
         <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" />
         <option value="$PROJECT_DIR$/frikin-allies.php" />
         <option value="$PROJECT_DIR$/admin/class-frikin-allies-admin-post-types.php" />
-        <option value="$PROJECT_DIR$/includes/class-frikin-allies.php" />
         <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" />
-        <option value="$PROJECT_DIR$/languages/frikin-allies-es_MX.po" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" />
         <option value="$PROJECT_DIR$/src/metablocks/innerblock.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/languages/frikin-allies-es_MX.po" />
+        <option value="$PROJECT_DIR$/includes/class-frikin-allies.php" />
         <option value="$PROJECT_DIR$/includes/class-frikin-allies-i18n.php" />
+        <option value="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" />
+        <option value="$PROJECT_DIR$/languages/frikin-allies-es_MX-frikin-allies-build-js.json" />
       </list>
     </option>
   </component>
@@ -180,7 +223,7 @@
               <item name="frikin-allies" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="metablocks" type="462c0819:PsiDirectoryNode" />
-              <item name="allyadditionalinfo" type="462c0819:PsiDirectoryNode" />
+              <item name="allycontactinformation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.buildtranslation">
+  <component name="RunManager" selected="npm.updatepot">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -258,23 +301,23 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="buildtranslation:json" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="updatepot" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="buildtranslation:json" />
+        <script value="updatepot" />
       </scripts>
-      <node-interpreter value="C:/Program Files/nodejs/node" />
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.updatepot" />
         <item itemvalue="npm.buildtranslation" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.build:pot" />
         <item itemvalue="npm.buildtranslation:js" />
-        <item itemvalue="npm.buildtranslation:json" />
       </list>
     </recent_temporary>
   </component>
@@ -294,18 +337,18 @@
       <workItem from="1562128808046" duration="891000" />
       <workItem from="1562132326022" duration="8663000" />
       <workItem from="1562170495465" duration="35000" />
-      <workItem from="1562173624473" duration="329000" />
+      <workItem from="1562173624473" duration="4314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52924000" />
+    <option name="totallyTimeSpent" value="56909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1057" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30087528" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -322,7 +365,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20779221" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20578778" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -384,20 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
@@ -427,16 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/i18nblocks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="e#305#371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/blocks.build.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -451,76 +470,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-frikin-allies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="191" column="84" selection-start-line="191" selection-start-column="84" selection-end-line="191" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX-afd7686e2728e72aba633a28e31d3ebb.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX-a428ca8038639f644f00b23014dacb2b.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/frikin-allies.pot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="242" column="43" selection-start-line="242" selection-start-column="43" selection-end-line="242" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-          <folding>
-            <element signature="e#115#137#0" expanded="true" />
-            <element signature="e#453#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX.mo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="950" selection-start-line="32" selection-start-column="939" selection-end-line="32" selection-end-column="950" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX.po">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6948">
-          <caret line="386" selection-start-line="386" selection-end-line="386" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX-a4f783c851c57db1967c3d9a58cfd198.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="589" selection-start-column="589" selection-end-column="589" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-frikin-allies-i18n.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
@@ -531,10 +484,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2123">
+          <caret line="228" column="19" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="19" />
+          <folding>
+            <element signature="e#115#137#0" expanded="true" />
+            <element signature="e#453#504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/i18nblocks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="e#305#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="159" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/frikin-allies.pot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5478">
+          <caret line="9" column="43" selection-end-line="384" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="267" lean-forward="true" selection-start-line="267" selection-end-line="267" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX-a428ca8038639f644f00b23014dacb2b.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="164" selection-start-line="164" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-frikin-allies-i18n.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-frikin-allies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="191" column="50" selection-start-line="191" selection-start-column="50" selection-end-line="191" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX-afd7686e2728e72aba633a28e31d3ebb.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="131" column="40" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="40" />
+        <state relative-caret-position="368">
+          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/frikin-allies-es_MX-frikin-allies-build-js.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="467" selection-start-column="467" selection-end-column="467" />
         </state>
       </provider>
     </entry>

@@ -127,13 +127,26 @@ class Frikin_Allies_Admin_Metablocks {
 	} // set_meta()
 
 	public function register_metablocks() {
-		// Register block styles for both frontend + backend.
+	    if ( ! function_exists( 'register_block_type' ) ) {
+	        // Gutenberg is not active.
+            //return;
+        }
+
+	    // Register block styles for both frontend + backend.
 		wp_register_style(
-			'frikin-allies-build-css', // Handle.
+		    'frikin-allies-build-css', // Handle.
 			plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block style CSS.
 			array( 'wp-editor' ), // Dependency to include the CSS after it.
 			null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
 		);
+
+        // Register block editor styles for backend.
+        wp_register_style(
+            'frikin-allies-build-editor-css', // Handle.
+            plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ), // Block editor CSS.
+            array( 'wp-edit-blocks' ), // Dependency to include the CSS after it.
+            null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ) // Version: File modification time.
+        );
 
 		// Register block editor script for backend.
 		wp_register_script(
@@ -142,14 +155,6 @@ class Frikin_Allies_Admin_Metablocks {
 			array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
 			null, // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: filemtime — Gets file modification time.
 			true // Enqueue the script in the footer.
-		);
-
-		// Register block editor styles for backend.
-		wp_register_style(
-			'frikin-allies-build-editor-css', // Handle.
-			plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ), // Block editor CSS.
-			array( 'wp-edit-blocks' ), // Dependency to include the CSS after it.
-			null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ) // Version: File modification time.
 		);
 
 		/**
@@ -172,6 +177,10 @@ class Frikin_Allies_Admin_Metablocks {
 				'editor_style'  => 'frikin-allies-build-editor-css',
 			)
 		);
+
+        if ( function_exists( 'wp_set_script_translations' ) ) {
+            wp_set_script_translations( 'frikin-allies-build-js', 'frikin-allies', plugin_dir_path( __FILE__ ) . '/languages' );
+        }
 	}
 
 	/**

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-07-03T10:23:21+02:00\n"
+"POT-Creation-Date: 2019-07-03T19:43:27+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.2.0\n"
 "X-Domain: frikin-allies\n"
@@ -24,7 +24,7 @@ msgid "frik-in.io"
 msgstr ""
 
 #. Description of the plugin
-msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
+msgid "Adds Ally CPT and metablocks."
 msgstr ""
 
 #. Author of the plugin
@@ -34,8 +34,13 @@ msgid "Frik-in"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:65
-#: admin/class-frikin-allies-admin-post-types.php:66
 msgid "Allies"
+msgstr ""
+
+#: admin/class-frikin-allies-admin-post-types.php:66
+#: dist/blocks.build.js:1
+#: src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js:151
+msgid "Ally"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:90
@@ -45,7 +50,7 @@ msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:91
 msgctxt "Post type singular name"
-msgid "Allies"
+msgid "Ally"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:92
@@ -55,7 +60,7 @@ msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:93
 msgctxt "Add New on Toolbar"
-msgid "Allies"
+msgid "Ally"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:94
@@ -63,19 +68,19 @@ msgid "Add New"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:95
-msgid "Add New Allies"
+msgid "Add New Ally"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:96
-msgid "New Allies"
+msgid "New Ally"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:97
-msgid "Edit Allies"
+msgid "Edit Ally"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:98
-msgid "View Allies"
+msgid "View Ally"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:99
@@ -100,7 +105,7 @@ msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:104
 msgctxt "Overrides the “Featured Image” phrase for this post type. Added in 4.3"
-msgid "Allies Cover Image"
+msgid "Ally Cover Image"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:105
@@ -135,17 +140,17 @@ msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:111
 msgctxt "Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
-msgid "Filter allies list"
+msgid "Filter ally list"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:112
 msgctxt "Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
-msgid "Allies list navigation"
+msgid "Ally list navigation"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-post-types.php:113
 msgctxt "Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4"
-msgid "Allies list"
+msgid "Ally list"
 msgstr ""
 
 #: admin/class-frikin-allies-admin-taxonomies.php:87
@@ -272,8 +277,39 @@ msgstr ""
 msgid "View Relation"
 msgstr ""
 
-#. Description of the plugin
-msgid "Adds Ally CPT and metablocks."
+#: dist/blocks.build.js:1
+#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:121
+msgid "Representative Name"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:130
+msgid "Representative Phone"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:139
+msgid "Representative email"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:149
+msgid "Representative Website"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:158
+msgid "Representative Facebook"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:167
+msgid "Representative Twitter"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:176
+msgid "Other"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -284,12 +320,6 @@ msgstr ""
 #: dist/blocks.build.js:1
 #: src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js:149
 msgid "None"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js:151
-#: admin/class-frikin-allies-admin-post-types.php:66
-msgid "Ally"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -351,85 +381,4 @@ msgstr ""
 #: dist/blocks.build.js:1
 #: src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js:220
 msgid "Importance Ally"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:121
-msgid "Representative Name"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:130
-msgid "Representative Phone"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:139
-msgid "Representative email"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:149
-msgid "Representative Website"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:158
-msgid "Representative Facebook"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:167
-msgid "Representative Twitter"
-msgstr ""
-
-#: dist/blocks.build.js:1
-#: src/metablocks/allycontactinformation/AllyContactInfoBlock.js:176
-msgid "Other"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:91
-msgctxt "Post type singular name"
-msgid "Ally"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:93
-msgctxt "Add New on Toolbar"
-msgid "Ally"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:95
-msgid "Add New Ally"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:96
-msgid "New Ally"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:97
-msgid "Edit Ally"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:98
-msgid "View Ally"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:104
-msgctxt "Overrides the “Featured Image” phrase for this post type. Added in 4.3"
-msgid "Ally Cover Image"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:111
-msgctxt "Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
-msgid "Filter ally list"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:112
-msgctxt "Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
-msgid "Ally list navigation"
-msgstr ""
-
-#: admin/class-frikin-allies-admin-post-types.php:113
-msgctxt "Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4"
-msgid "Ally list"
 msgstr ""

@@ -6,7 +6,7 @@
     "start": "cgb-scripts start",
     "eject": "cgb-scripts eject",
     "build": "cgb-scripts build",
-    "updatepot": "C:\\wp-cli\\wp i18n make-pot . --merge=languages/frikin-allies.pot",
+    "updatepot": "C:\\wp-cli\\wp i18n make-pot ./ --merge=languages/frikin-allies.pot && xcopy ./languages/frikin-allies.pot ./languages/frikin-allies-es_MX.po",
     "buildtranslation": "C:\\wp-cli\\wp  i18n make-json languages/frikin-allies-es_MX.po --no-purge"
   },
   "dependencies": {

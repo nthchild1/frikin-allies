@@ -172,7 +172,7 @@ class Frikin_Allies {
 		$plugin_post_types = new Frikin_Allies_Admin_Post_Types( $this->get_plugin_name(), $this->get_version() );
 		$plugin_metablocks = new Frikin_Allies_Admin_Metablocks( $this->get_plugin_name(), $this->get_version() );
 		$plugin_taxonomies = new Frikin_Allies_Admin_Taxonomies( $this->get_plugin_name(), $this->get_version() );
-		$plugin_i18n = new Frikin_Allies_i18n($this->get_plugin_name(),$this->get_version());
+		//$plugin_i18n = new Frikin_Allies_i18n($this->get_plugin_name(),$this->get_version());
 
 		$this->loader->add_action( 'init', $plugin_taxonomies, 'new_taxonomy_ally_type' );
 		$this->loader->add_action( 'init', $plugin_taxonomies, 'new_taxonomy_relation_type' );
@@ -189,7 +189,7 @@ class Frikin_Allies {
 		$this->loader->add_action( 'init',$plugin_metablocks, 'register_template' );
 
 		// Translation
-        $this->loader->add_action( 'init', $plugin_i18n,'set_script_translations' );
+        //$this->loader->add_action( 'init', $plugin_i18n,'set_script_translations' );
 
     }
 
