@@ -168,7 +168,7 @@ class Frikin_Allies_Admin_Metablocks {
 		 * @since 1.16.0
 		 */
 		register_block_type(
-			'cgb/block-frikin-blocks', array(
+			'frik-in/frikin-allies-block-build', array(
 				// Enqueue blocks.style.build.css on both frontend & backend.
 				'style'         => 'frikin-allies-build-css',
 				// Enqueue blocks.build.js in the editor only.
