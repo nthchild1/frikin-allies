@@ -57,6 +57,7 @@ registerBlockType( 'frik-in/innerblock', {
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
 	 */
 	edit: (props) => {
+
 		let post_content = wp.data.select( "core/editor" ).getCurrentPost().content;
 		let blocks = wp.blocks.parse( post_content );
 		let oldblocks = [['core/paragraph', {content: ''}]];
@@ -67,7 +68,10 @@ registerBlockType( 'frik-in/innerblock', {
 				wp.data.dispatch('core/block-editor').setTemplateValidity(true);
 			}
 			else {
-				oldblocks =  blocks.map(block => [block.name ? block.name : 'core/paragraph', {content: block.attributes.content ? block.attributes.content : ''}]);
+				oldblocks =  blocks.map(block => [
+					block.name
+						? block.name
+						: 'core/paragraph', {content: block.attributes.content ? block.attributes.content : ''}]);
 			}
 		}
 		return <InnerBlocks

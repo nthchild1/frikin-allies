@@ -118,7 +118,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 			//EDITOR RETURN
 			return <div className ={this.props.className}>
 				<div>
-					<label htmlFor="name">Representative Name </label>
+					<label htmlFor="name">{__('Representative Name', 'frikin-allies')} </label>
 					<input value={ this.state.name }
 						   type="text" id="name"
 						   onChange={ event => {
@@ -127,7 +127,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 						   } }
 					/>
 
-					<label htmlFor="phone"> Representative Phone </label>
+					<label htmlFor="phone">{__('Representative Phone', 'frikin-allies')} </label>
 					<input value={ this.state.phone }
 						   type="text" id="phone"
 						   onChange={ event => {
@@ -136,7 +136,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 						   } }
 					/>
 
-					<label htmlFor="email">Representative email </label>
+					<label htmlFor="email">{__('Representative email', 'frikin-allies')} </label>
 					<input value={ this.state.email }
 						   type="text" id="email"
 						   onChange={ event => {
@@ -146,7 +146,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					/>
 				</div>
 				<div>
-				<label htmlFor="website">Representative Website </label>
+				<label htmlFor="website">{__('Representative Website', 'frikin-allies')} </label>
 				<input value={this.state.website}
 					   type="text" id="webiste"
 					   onChange={event => {
@@ -155,7 +155,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   }}
 				/>
 
-				<label htmlFor="facebook">Representative Facebook </label>
+				<label htmlFor="facebook">{__('Representative Facebook', 'frikin-allies')} </label>
 				<input value={ this.state.facebook }
 					   type="text" id="facebook"
 					   onChange={ event => {
@@ -164,7 +164,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   } }
 				/>
 
-				<label htmlFor="email">Representative Twitter </label>
+				<label htmlFor="email">{__('Representative Twitter', 'frikin-allies')} </label>
 				<input value={ this.state.twitter }
 					   type="text" id="twitter"
 					   onChange={ event => {
@@ -173,7 +173,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   } }
 				/>
 
-				<label htmlFor="other"> Other </label>
+				<label htmlFor="other"> {__('Other', 'frikin-allies')} </label>
 				<input value={ this.state.other }
 					   type="text" id="other"
 					   onChange={ event => {

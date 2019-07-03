@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Frik-in Allies
  * Plugin URI:        frik-in.io
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Adds Ally CPT and metablocks.
  * Version:           1.0.0
  * Author:            Frik-in
  * Author URI:        frik-in.io

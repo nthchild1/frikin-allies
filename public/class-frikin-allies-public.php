@@ -18,7 +18,7 @@
  *
  * @package    Frikin_Allies
  * @subpackage Frikin_Allies/public
- * @author     Frik-in <tky2048@frik-in.com>
+ * @author     Frik-in <webmaster@frik-in.com>
  */
 class Frikin_Allies_Public {
 

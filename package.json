@@ -1,13 +1,35 @@
 {
-  "name": "allies-blocks-cgb-guten-block",
+  "name": "frikin-allies",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "cgb-scripts start",
+    "eject": "cgb-scripts eject",
     "build": "cgb-scripts build",
-    "eject": "cgb-scripts eject"
+    "updatepot": "C:\\wp-cli\\wp i18n make-pot . --merge=languages/frikin-allies.pot",
+    "buildtranslation": "C:\\wp-cli\\wp  i18n make-json languages/frikin-allies-es_MX.po --no-purge"
   },
   "dependencies": {
     "cgb-scripts": "1.18.1"
+  },
+  "devDependencies": {
+    "@wordpress/babel-plugin-makepot": "^2.1.2",
+    "@wordpress/babel-preset-default": "^3.0.1",
+    "@wordpress/i18n": "^3.1.0",
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2"
+  },
+  "babel": {
+    "presets": [
+      "@wordpress/default"
+    ],
+    "plugins": [
+      [
+        "@wordpress/babel-plugin-makepot",
+        {
+          "output": "languages/gutenberg-i18n-block-js.pot"
+        }
+      ]
+    ]
   }
 }

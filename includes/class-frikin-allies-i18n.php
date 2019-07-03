@@ -22,7 +22,7 @@
  * @since      1.0.0
  * @package    Frikin_Allies
  * @subpackage Frikin_Allies/includes
- * @author     Frik-in <tky2048@frik-in.com>
+ * @author     Frik-in <webmaster@frik-in.com>
  */
 class Frikin_Allies_i18n {
 
@@ -41,7 +41,9 @@ class Frikin_Allies_i18n {
 		);
 
 	}
-
-
-
+    function set_script_translations() {
+        if ( function_exists( 'wp_set_script_translations' ) ) {
+            wp_set_script_translations( 'frikin_blocks-cgb-block-js', 'frikin-allies', plugin_dir_path( __FILE__ ) . '/languages' );
+        }
+    }
 }
