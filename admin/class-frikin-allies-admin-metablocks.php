@@ -129,7 +129,7 @@ class Frikin_Allies_Admin_Metablocks {
 	public function register_metablocks() {
 		// Register block styles for both frontend + backend.
 		wp_register_style(
-			'frikin_blocks-cgb-style-css', // Handle.
+			'frikin-allies-build-css', // Handle.
 			plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block style CSS.
 			array( 'wp-editor' ), // Dependency to include the CSS after it.
 			null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
@@ -137,7 +137,7 @@ class Frikin_Allies_Admin_Metablocks {
 
 		// Register block editor script for backend.
 		wp_register_script(
-			'frikin_blocks-cgb-block-js', // Handle.
+			'frikin-allies-build-js', // Handle.
 			plugins_url( 'dist/blocks.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
 			array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
 			null, // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: filemtime — Gets file modification time.
@@ -146,7 +146,7 @@ class Frikin_Allies_Admin_Metablocks {
 
 		// Register block editor styles for backend.
 		wp_register_style(
-			'frikin_blocks-cgb-block-editor-css', // Handle.
+			'frikin-allies-build-editor-css', // Handle.
 			plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ), // Block editor CSS.
 			array( 'wp-edit-blocks' ), // Dependency to include the CSS after it.
 			null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ) // Version: File modification time.
@@ -165,11 +165,11 @@ class Frikin_Allies_Admin_Metablocks {
 		register_block_type(
 			'cgb/block-frikin-blocks', array(
 				// Enqueue blocks.style.build.css on both frontend & backend.
-				'style'         => 'frikin_blocks-cgb-style-css',
+				'style'         => 'frikin-allies-build-css',
 				// Enqueue blocks.build.js in the editor only.
-				'editor_script' => 'frikin_blocks-cgb-block-js',
+				'editor_script' => 'frikin-allies-build-js',
 				// Enqueue blocks.editor.build.css in the editor only.
-				'editor_style'  => 'frikin_blocks-cgb-block-editor-css',
+				'editor_style'  => 'frikin-allies-build-editor-css',
 			)
 		);
 	}
