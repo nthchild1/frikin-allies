@@ -95,14 +95,14 @@ registerBlockType( 'frik-in/ally-additional-info', {
                 //Attributes
                 pendingDate: this.attributes['pending-date'] ? this.attributes['pending-date'] : null,
 
-                allianceState: this.attributes['alliance-state'] ? this.attributes['alliance-state'] : null,
-                allianceSize: this.attributes['alliance-size'] ? this.attributes['alliance-size'] : null,
+                allianceState: this.attributes['alliance-state'] ? this.attributes['alliance-state'] : "",
+                allianceSize: this.attributes['alliance-size'] ? this.attributes['alliance-size'] : "",
 
                 //Input Values
-                pendingPart: this.attributes['pending-part'] ? this.attributes['pending-part'] : false,
+                pendingPart: this.attributes['pending-part'] ? this.attributes['pending-part'] : 'none',
 
-                importanceFrikin: this.attributes['importance-frikin'] ? this.attributes['importance-frikin'] : false,
-                importanceAlly: this.attributes['importance-ally'] ? this.attributes['importance-ally'] : false,
+                importanceFrikin: this.attributes['importance-frikin'] ? this.attributes['importance-frikin'] : '0',
+                importanceAlly: this.attributes['importance-ally'] ? this.attributes['importance-ally'] : '0',
 
                 //Tools
             };
@@ -113,6 +113,10 @@ registerBlockType( 'frik-in/ally-additional-info', {
             if ( (this.state.allianceSize !== null) && (this.state.allianceState !== null) )
             {
                 wp.data.dispatch('core/editor').unlockPostSaving('aria-disabled');
+            } else if (this.state.pendingPart === "none")
+            {
+                this.setState({pendingDate: null});
+                this.setAttributes({'pending-date': ''});
             }
             // wp.data.dispatch('core/notices').createErrorNotice('Both alliance size and alliance state are needed')
         }
@@ -121,7 +125,6 @@ registerBlockType( 'frik-in/ally-additional-info', {
             let dateModule, placeModule;
             const allianceState = this.state.allianceState;
             const pendingPart = this.state.pendingPart;
-
             let pendingsModule = [
                 [
                     <label htmlFor="pending-part">Pending Part</label>,
@@ -131,12 +134,12 @@ registerBlockType( 'frik-in/ally-additional-info', {
                                 this.setState({pendingPart: event.target.value})
                                 this.setAttributes( { 'pending-part': event.target.value } );
                             }}>
-                        <option value="" disabled>Select your option</option>
+                        <option value="none">None</option>
                         <option value="frikin">Frik-in</option>
                         <option value="ally">Ally</option>
                     </select>],
 
-                pendingPart ? [
+                pendingPart !== "none" ? [
                     <label htmlFor="pending-date">Pending Date</label>,
                     <input value={this.state.pendingDate} type="date"
                            id="pending-date" name="pending-date"
@@ -197,11 +200,15 @@ registerBlockType( 'frik-in/ally-additional-info', {
             ];
 
             //EDITOR RETURN
-            return <div className ={this.props.className}>
+            return <div className={this.props.className}>
+               <div>
                 {pendingsModule}
                 {allianceStateModule}
+               </div>
+                <div>
                 {allianceSizeModule}
                 {importanceModule}
+                </div>
             </div>
         }},
 

@@ -117,41 +117,42 @@ registerBlockType( 'frik-in/ally-contact-info', {
 		render() {
 			//EDITOR RETURN
 			return <div className ={this.props.className}>
+				<div>
+					<label htmlFor="name">Representative Name </label>
+					<input value={ this.state.name }
+						   type="text" id="name"
+						   onChange={ event => {
+							   this.setState( { name: event.target.value } );
+							   this.setAttributes( { 'representative-name': event.target.value } );
+						   } }
+					/>
 
-				<label for="website">Representative Website </label>
+					<label htmlFor="phone"> Representative Phone </label>
+					<input value={ this.state.phone }
+						   type="text" id="phone"
+						   onChange={ event => {
+							   this.setState( { phone: event.target.value } );
+							   this.setAttributes( { 'representative-phone': event.target.value } );
+						   } }
+					/>
+
+					<label htmlFor="email">Representative email </label>
+					<input value={ this.state.email }
+						   type="text" id="email"
+						   onChange={ event => {
+							   this.setState( { email: event.target.value } );
+							   this.setAttributes( { 'representative-email': event.target.value } );
+						   } }
+					/>
+				</div>
+				<div>
+				<label htmlFor="website">Representative Website </label>
 				<input value={this.state.website}
 					   type="text" id="webiste"
-					   onChange={ event => {
-						   this.setState( { website: event.target.value } );
-						   this.setAttributes( { 'website': event.target.value } );
+					   onChange={event => {
+						   this.setState({website: event.target.value});
+						   this.setAttributes({'website': event.target.value});
 					   }}
-				/>
-
-				<label htmlFor="name">Representative Name </label>
-				<input value={ this.state.name }
-					   type="text" id="name"
-					   onChange={ event => {
-						   this.setState( { name: event.target.value } );
-						   this.setAttributes( { 'representative-name': event.target.value } );
-					   } }
-				/>
-
-				<label htmlFor="phone"> Representative Phone </label>
-				<input value={ this.state.phone }
-					   type="text" id="phone"
-					   onChange={ event => {
-						   this.setState( { phone: event.target.value } );
-						   this.setAttributes( { 'representative-phone': event.target.value } );
-					   } }
-				/>
-
-				<label htmlFor="email">Representative email </label>
-				<input value={ this.state.email }
-					   type="text" id="email"
-					   onChange={ event => {
-						   this.setState( { email: event.target.value } );
-						   this.setAttributes( { 'representative-email': event.target.value } );
-					   } }
 				/>
 
 				<label htmlFor="facebook">Representative Facebook </label>
@@ -172,7 +173,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 					   } }
 				/>
 
-				<label htmlFor="other"> other </label>
+				<label htmlFor="other"> Other </label>
 				<input value={ this.state.other }
 					   type="text" id="other"
 					   onChange={ event => {
@@ -180,6 +181,7 @@ registerBlockType( 'frik-in/ally-contact-info', {
 						   this.setAttributes( { 'other-info': event.target.value } );
 					   } }
 				/>
+				</div>
 			</div>
 		}
 	},

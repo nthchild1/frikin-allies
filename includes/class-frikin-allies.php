@@ -25,7 +25,7 @@
  * @since      1.0.0
  * @package    Frikin_Allies
  * @subpackage Frikin_Allies/includes
- * @author     Carlos Cortés <tky2048@frik-in.com>
+ * @author     Frik-in <tky2048@frik-in.com>
  */
 class Frikin_Allies {
 

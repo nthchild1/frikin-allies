@@ -6,7 +6,7 @@
  * @since      1.0.0
  * @package     Frikin_Allies
  * @subpackage 	Frikin_Allies/admin
- * @author     	Carlos Cortés <tky2048@frik-in.com>
+ * @author     	Frik-in <tky2048@frik-in.com>
  */
 class Frikin_Allies_Admin_Metablocks {
 	/**
@@ -242,12 +242,16 @@ class Frikin_Allies_Admin_Metablocks {
 	 */
 	public function register_template(){
 		$post_type_object = get_post_type_object( 'ally' );
+		                                // [ name, atts[], inner[] ]
 		$post_type_object->template = array(
 			array('frik-in/ally-contact-info'),
             array('frik-in/ally-additional-info'),
             array('frik-in/ally-social-networks'),
             array('frik-in/innerblock')
 		);
+
 		$post_type_object->template_lock = 'all';
 	}
 }
+
+

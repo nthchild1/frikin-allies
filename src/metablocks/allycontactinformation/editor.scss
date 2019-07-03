@@ -12,13 +12,13 @@
 	content: '';
 	display: table;
 	table-layout: fixed;
+	&:last-child{
+		width: 100%;
+	}
 
 	>div{
 		width: 50%;
 		float: left;
-		&:last-child{
-			width: 100%;
-		}
 	}
 
 	.icon{

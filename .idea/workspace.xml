@@ -3,10 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="9bfe8f81-41ee-416c-b6c7-9e5380b821fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/class-frikin-allies-admin-post-types.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/class-frikin-allies-admin-post-types.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/class-frikin-allies-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/class-frikin-allies-admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/blocks.build.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.build.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/blocks.editor.build.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.editor.build.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/blocks.style.build.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blocks.style.build.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frikin-allies.php" beforeDir="false" afterPath="$PROJECT_DIR$/frikin-allies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-frikin-allies-activator.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-frikin-allies-activator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-frikin-allies-deactivator.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-frikin-allies-deactivator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-frikin-allies-i18n.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-frikin-allies-i18n.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-frikin-allies-loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-frikin-allies-loader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/class-frikin-allies.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/class-frikin-allies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/class-frikin-allies-public.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/class-frikin-allies-public.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frikin-allies/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,24 +43,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+            <state relative-caret-position="336">
+              <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
               <folding>
                 <element signature="e#115#137#0" expanded="true" />
                 <element signature="e#453#504#0" expanded="true" />
-                <element signature="e#8624#9357#0" />
-                <element signature="e#9349#10003#0" />
-                <element signature="e#10041#11029#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -62,13 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>disponibility</find>
-      <find>Free E</find>
-      <find>Size</find>
-      <find>State</find>
-      <find>State</find>
-      <find>ally-contact-information-website</find>
-      <find>representative-name</find>
       <find>ally-contact-information-representative-name</find>
       <find>ally-contact-information-representative-phone</find>
       <find>ally-contact-information-twitter</find>
@@ -92,6 +87,13 @@
       <find>console</find>
       <find>checb</find>
       <find>date</find>
+      <find>conso</find>
+      <find>Carlos Cortés</find>
+      <find>pending</find>
+      <find>array(</find>
+      <find>Pending Part</find>
+      <find>row</find>
+      <find>Pend</find>
     </findStrings>
     <replaceStrings>
       <replace>ally-contact-information-facebook</replace>
@@ -115,7 +117,9 @@
       <replace>youtube</replace>
       <replace>Pending</replace>
       <replace>pending</replace>
+      <replace>Frik-in</replace>
       <replace>allianceState</replace>
+      <replace>[</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\xampp\apps\wordpress\htdocs\wp-content\plugins\frikin-allies</dir>
@@ -127,18 +131,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" />
         <option value="$PROJECT_DIR$/src/common.scss" />
-        <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" />
-        <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" />
-        <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" />
         <option value="$PROJECT_DIR$/src/metablocks/allyimportance/editor.scss" />
         <option value="$PROJECT_DIR$/src/metablocks/allyimportance/AllyImportanceBlock.js" />
         <option value="$PROJECT_DIR$/src/blocks.js" />
-        <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/metablocks/innerblock.js" />
         <option value="$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php" />
+        <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js" />
+        <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss" />
+        <option value="$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js" />
         <option value="$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js" />
       </list>
     </option>
@@ -232,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562035205520</updated>
-      <workItem from="1562035208849" duration="21714000" />
+      <workItem from="1562035208849" duration="33566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21714000" />
+    <option name="totallyTimeSpent" value="33566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -248,12 +252,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.20578778" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.20578778" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
@@ -284,20 +288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-988">
@@ -309,23 +299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/style.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -346,10 +319,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/innerblock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1494">
+          <caret line="83" column="21" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/style.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="245" column="38" selection-start-line="245" selection-start-column="38" selection-end-line="245" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allysocialnetworks/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/editor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/metablocks/allysocialnetworks/AllySocialNetworksBlock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="-36">
+          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
           <folding>
             <element signature="e#115#137#0" expanded="true" />
           </folding>
@@ -358,35 +376,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/metablocks/allycontactinformation/AllyContactInfoBlock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/metablocks/innerblock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class-frikin-allies-admin-metablocks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+        <state relative-caret-position="831">
+          <caret line="146" column="12" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
+          <folding>
+            <element signature="e#4687#5942#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/metablocks/allyadditionalinfo/AllyAdditionalInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        <state relative-caret-position="336">
+          <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
           <folding>
             <element signature="e#115#137#0" expanded="true" />
             <element signature="e#453#504#0" expanded="true" />
-            <element signature="e#8624#9357#0" />
-            <element signature="e#9349#10003#0" />
-            <element signature="e#10041#11029#0" />
           </folding>
         </state>
       </provider>

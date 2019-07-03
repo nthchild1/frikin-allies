@@ -100,7 +100,7 @@ registerBlockType( 'frik-in/ally-social-networks', {
 		render() {
 			//EDITOR RETURN
 			return <div className ={this.props.className}>
-
+				<div>
 				<label for="facebook">Facebook </label>
 				<input value={this.state.facebook}
 					   type="text" id="facebook"
@@ -118,6 +118,8 @@ registerBlockType( 'frik-in/ally-social-networks', {
 						   this.setAttributes( { 'instagram': event.target.value } );
 					   } }
 				/>
+				</div>
+				<div>
 
 				<label htmlFor="twitter"> Twitter </label>
 				<input value={ this.state.twitter }
@@ -136,6 +138,7 @@ registerBlockType( 'frik-in/ally-social-networks', {
 						   this.setAttributes( { 'youtube': event.target.value } );
 					   } }
 				/>
+				</div>
 
 			</div>
 		}
