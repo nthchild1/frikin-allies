@@ -30,7 +30,9 @@ class Frikin_Allies_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-
+		// schedule events (cron jobs)
+		require_once plugin_dir_path( __FILE__ ) . 'class-frikin-allies-cron.php';
+		Frikin_Allies_Cron::schedule();
 	}
 
 }

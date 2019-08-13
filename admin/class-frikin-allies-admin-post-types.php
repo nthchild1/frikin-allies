@@ -74,7 +74,7 @@ class Frikin_Allies_Admin_Post_Types
 		$opts['hierarchical']                           = FALSE;
 		$opts['map_meta_cap']                           = TRUE;
 		$opts['menu_icon']                              = 'dashicons-calendar-alt';
-		$opts['menu_position']                          = 22;
+		$opts['menu_position']                          = 26;
 		$opts['public']                                 = TRUE;
 		$opts['publicly_querable']                      = TRUE;
 		$opts['query_var']                              = TRUE;

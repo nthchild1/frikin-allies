@@ -10,8 +10,8 @@ import IconCalendar from "../../icons/IconCalendar";
 import IconRetail from "../../icons/IconReatilSpace";
 import IconLink from "../../icons/IconLink";
 
-const { __ } = wp.i18n; // Import __() from wp.i18n
-const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
+const {__} = wp.i18n; // Import __() from wp.i18n
+const {registerBlockType} = wp.blocks; // Import registerBlockType() from wp.blocks
 import Suggestions from "../../Search/Suggestions";
 import IconEvents from "../../icons/IconEvents"; // or wp.editor
 
@@ -124,8 +124,8 @@ registerBlockType("frik-in/ally-additional-info", {
         componentDidUpdate(prevProps, prevState) {
             if (prevState.pendingPart !== this.state.pendingPart) {
                 if (this.state.pendingPart === "none") {
-                    this.setState({ pendingDate: null });
-                    this.setAttributes({ "pending-date": "" });
+                    this.setState({pendingDate: null});
+                    this.setAttributes({"pending-date": ""});
                 }
             }
 
@@ -138,92 +138,92 @@ registerBlockType("frik-in/ally-additional-info", {
             const pendingPart = this.state.pendingPart;
             let pendingsModule = [
                 [
-                    <label htmlFor="pending-part">{__("Parte con Pendiente","frikin-allies")}</label>,
+                    <label htmlFor="pending-part">{__("Parte con Pendiente", "frikin-allies")}</label>,
                     <select value={this.state.pendingPart}
-                        id="pending-part" name="pending-part"
-                        onChange={event => {
-                            this.setState({ pendingPart: event.target.value });
-                            this.setAttributes({ "pending-part": event.target.value });
-                        }}
+                            id="pending-part" name="pending-part"
+                            onChange={event => {
+                                this.setState({pendingPart: event.target.value});
+                                this.setAttributes({"pending-part": event.target.value});
+                            }}
                     >
-                        <option value="none">{__("Ninguno","frikin-allies")}</option>
-                        <option value="frikin">{__("Frik-in","frikin-allies")}</option>
-                        <option value="ally">{__("Aliado","frikin-allies")}</option>
+                        <option value="none">{__("Ninguno", "frikin-allies")}</option>
+                        <option value="frikin">{__("Frik-in", "frikin-allies")}</option>
+                        <option value="ally">{__("Aliado", "frikin-allies")}</option>
                     </select>
                 ],
 
                 pendingPart !== "none"
                     ? [
-                        <label htmlFor="pending-date">{__("Fecha de Pendiente","frikin-allies")}</label>,
+                        <label htmlFor="pending-date">{__("Fecha de Pendiente", "frikin-allies")}</label>,
                         <input value={this.state.pendingDate}
-                            type="date" id="pending-date" name="pending-date"
-                            onChange={event => {
-                                this.setState({ pendingDate: event.target.value });
-                                this.setAttributes({ "pending-date": event.target.value });
-                            }}
+                               type="date" id="pending-date" name="pending-date"
+                               onChange={event => {
+                                   this.setState({pendingDate: event.target.value});
+                                   this.setAttributes({"pending-date": event.target.value});
+                               }}
                         />
                     ]
                     : null
             ];
 
             let allianceStateModule = [
-                <label htmlFor="alliance-state-select">{__("Estado de Alianza","frikin-allies")}</label>,
+                <label htmlFor="alliance-state-select">{__("Estado de Alianza", "frikin-allies")}</label>,
                 <select value={this.state.allianceState}
                         id="alliance-state-select" name="alliance-state"
                         onChange={event => {
-                            this.setState({ allianceState: event.target.value }, () => {
+                            this.setState({allianceState: event.target.value}, () => {
                                 if (this.state.allianceSize !== "" && this.state.allianceState !== "") {
-                                wp.data.dispatch("core/editor").unlockPostSaving("aria-disabled");
-                            }
-                        });
-                        this.setAttributes({ "alliance-state": event.target.value });
-                    }}
+                                    wp.data.dispatch("core/editor").unlockPostSaving("aria-disabled");
+                                }
+                            });
+                            this.setAttributes({"alliance-state": event.target.value});
+                        }}
                 >
-                    <option value="">{__("Selecciona tu opción","frikin-allies")}</option>
-                    <option value="active">{__("Activa","frikin-allies")}</option>
-                    <option value="inactive">{__("Inactiva","frikin-allies")}</option>
-                    <option value="uncertain">{__("Incierta","frikin-allies")}</option>
+                    <option value="">{__("Selecciona tu opción", "frikin-allies")}</option>
+                    <option value="active">{__("Activa", "frikin-allies")}</option>
+                    <option value="inactive">{__("Inactiva", "frikin-allies")}</option>
+                    <option value="uncertain">{__("Incierta", "frikin-allies")}</option>
                 </select>
             ];
 
             let allianceSizeModule = [
-                <label htmlFor="alliance-size-select">{__("Tamaño","frikin-allies")}</label>,
+                <label htmlFor="alliance-size-select">{__("Tamaño", "frikin-allies")}</label>,
                 <select
                     id="alliance-size-select"
                     name="alliance-size"
                     value={this.state.allianceSize}
                     onChange={event => {
-                        this.setState({ allianceSize: event.target.value }, () => {
+                        this.setState({allianceSize: event.target.value}, () => {
                             if (this.state.allianceSize !== "" && this.state.allianceState !== "") {
                                 wp.data.dispatch("core/editor").unlockPostSaving("aria-disabled");
                             }
                         });
-                        this.setAttributes({ "alliance-size": event.target.value });
+                        this.setAttributes({"alliance-size": event.target.value});
                     }}
                 >
                     <option value="" disabled selected> {__("Selecciona tu opción", "frikin-allies")}</option>
-                    <option value="1">{__("Nivel 1","frikin-allies")}</option>
-                    <option value="2">{__("Nivel 2","frikin-allies")}</option>
-                    <option value="3">{__("Nivel 3","frikin-allies")}</option>
+                    <option value="1">{__("Nivel 1", "frikin-allies")}</option>
+                    <option value="2">{__("Nivel 2", "frikin-allies")}</option>
+                    <option value="3">{__("Nivel 3", "frikin-allies")}</option>
                 </select>
             ];
 
             let importanceModule = [
                 <label htmlFor="importance-frikin">{__("Importancia Frik-in", "frikin-allies")}</label>,
                 <input value={this.state.importanceFrikin}
-                    type="number" id="importance-frikin" name="importance-frikin"
-                    onChange={event => {
-                        this.setState({ importanceFrikin: event.target.value });
-                        this.setAttributes({ "importance-frikin": event.target.value });
-                    }}
+                       type="number" id="importance-frikin" name="importance-frikin"
+                       onChange={event => {
+                           this.setState({importanceFrikin: event.target.value});
+                           this.setAttributes({"importance-frikin": event.target.value});
+                       }}
                 />,
                 <label htmlFor="importance-ally">{__("Importancia Aliado", "frikin-allies")}</label>,
                 <input value={this.state.importanceAlly}
-                    type="number" id="importance-ally" name="importance-ally"
-                    onChange={event => {
-                        this.setState({ importanceAlly: event.target.value });
-                        this.setAttributes({ "importance-ally": event.target.value });
-                    }}
+                       type="number" id="importance-ally" name="importance-ally"
+                       onChange={event => {
+                           this.setState({importanceAlly: event.target.value});
+                           this.setAttributes({"importance-ally": event.target.value});
+                       }}
                 />
             ];
             //EDITOR RETURN
@@ -250,7 +250,7 @@ registerBlockType("frik-in/ally-additional-info", {
      *
      * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
      */
-    save: function(props) {
+    save: function (props) {
         return null;
     }
 });

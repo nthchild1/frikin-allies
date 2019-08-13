@@ -31,6 +31,8 @@ class Frikin_Allies_Deactivator {
 	 */
 	public static function deactivate() {
 
+		require_once plugin_dir_path( __FILE__ ) . 'class-frikin-allies-cron.php';
+		Frikin_Allies_Cron::unschedule();
 	}
 
 }

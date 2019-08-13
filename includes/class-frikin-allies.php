@@ -90,6 +90,7 @@ class Frikin_Allies {
 	 * - Frikin_Allies_i18n. Defines internationalization functionality.
 	 * - Frikin_Allies_Admin. Defines all hooks for the admin area.
 	 * - Frikin_Allies_Public. Defines all hooks for the public side of the site.
+	 * - Plugin_Name_Cron. Orchestrates scheduling and un-scheduling cron jobs.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -138,6 +139,16 @@ class Frikin_Allies {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-frikin-allies-public.php';
 
+		/**
+		* The class responsible for scheduling and un-scheduling events (cron jobs).
+		*/
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-frikin-allies-cron.php';
+
+		/**
+		* The class responsible for scheduling and un-scheduling events (cron jobs).
+		*/
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-frikin-allies-mailing.php';
+
 		$this->loader = new Frikin_Allies_Loader();
 
 	}
@@ -173,6 +184,9 @@ class Frikin_Allies {
 		$plugin_metablocks = new Frikin_Allies_Admin_Metablocks( $this->get_plugin_name(), $this->get_version() );
 		$plugin_taxonomies = new Frikin_Allies_Admin_Taxonomies( $this->get_plugin_name(), $this->get_version() );
 		//$plugin_i18n = new Frikin_Allies_i18n($this->get_plugin_name(),$this->get_version());
+		$plugin_cron = new Frikin_Allies_Cron( $this->get_plugin_name(), $this->get_version() );
+
+		$plugin_mailing = new Frikin_Allies_Mailing($this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'init', $plugin_taxonomies, 'new_taxonomy_ally_type' );
 		$this->loader->add_action( 'init', $plugin_taxonomies, 'new_taxonomy_relation_type' );
@@ -188,8 +202,14 @@ class Frikin_Allies {
 		$this->loader->add_action( 'init', $plugin_metablocks, 'register_meta_for_rest' );
 		$this->loader->add_action( 'init',$plugin_metablocks, 'register_template' );
 
+		//What hook should this be run on?
+		$this->loader->add_action( 'init', $plugin_mailing, 'test' );
+
 		// Translation
         //$this->loader->add_action( 'init', $plugin_i18n,'set_script_translations' );
+
+	  	//cron
+		$this->loader->add_action( Frikin_Allies_Cron::FRIKIN_ALLIES_EVENT_DAILY_HOOK, $plugin_cron, 'run_daily_event' );
 
     }
 

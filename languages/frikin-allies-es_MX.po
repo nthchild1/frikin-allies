@@ -24,7 +24,7 @@ msgstr "frik-in.io"
 
 #. Description of the plugin
 msgid "Adds Ally CPT and metablocks."
-msgstr "Añade el CPT para Aliados y sus metabloques"
+msgstr "Añade el Custom Post Type para Aliados y sus metabloques"
 
 #: admin/class-frikin-allies-admin-post-types.php:65
 msgid "Allies"

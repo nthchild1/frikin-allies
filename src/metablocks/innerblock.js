@@ -27,7 +27,7 @@ const { useCallback } = wp.element;
  *                             registered; otherwise `undefined`.
  */
 
-registerBlockType( 'frik-in/innerblock', {
+registerBlockType( 'frik-in/ally-innerblock', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'Inner - Block' ), // Block title.
 	icon: 'dashicons-products', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
@@ -63,7 +63,7 @@ registerBlockType( 'frik-in/innerblock', {
 		let oldblocks = [['core/paragraph', {content: ''}]];
 
 		if (blocks.length !== 0){
-			if (blocks.find(block => block.name === 'frik-in/innerblock'))
+			if (blocks.find(block => block.name === 'frik-in/ally-innerblock'))
 			{
 				wp.data.dispatch('core/block-editor').setTemplateValidity(true);
 			}
